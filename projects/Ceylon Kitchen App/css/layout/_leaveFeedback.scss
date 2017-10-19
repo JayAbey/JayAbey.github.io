@@ -1,0 +1,33 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+//mixins
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.feedback-btn{
+  @include border-radius(10px);
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 6%;
+  padding-bottom: 1%;
+  text-align: center;
+  padding-top: 1%;
+  background:$primary-color;
+  opacity: 0.7;
+  border-color: $secondary-color;
+  border-style: ridge;
+    a{
+      text-decoration: none;
+      color: $secondary-color;
+      transition: .3s background-color;
+      font-family: $base-font;
+    }
+}

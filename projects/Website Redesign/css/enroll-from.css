@@ -1,0 +1,114 @@
+body {
+    background-color: #E2E2E2;
+}
+
+.student img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    max-height: 460px;
+    display: block;
+    margin: auto;
+    z-index: -99999;
+}
+
+.enroll-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 450px;
+}
+
+.enroll-1 div {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    width: 410px;
+    height: 20px;
+}
+
+.enroll-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 320px;
+}
+
+.enroll-2 div {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    width: 410px;
+    height: 20px;
+}
+
+.enroll-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 200px;
+}
+
+.enroll-3 div {
+    margin-left: 2vw;
+    width: 50px;
+    height: 20px;
+}
+
+#flexstart {
+    justify-content: flex-start;
+    font-size: 15px;
+}
+
+#flexend {
+    justify-content: flex-end;
+    text-align: right;
+    font-size: 15px;
+}
+
+#center {
+    position: relative;
+    right: 10%;
+    left: 10%;
+    margin: 0 auto;
+}
+
+.title {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 40px;
+}
+
+.title div {
+    width: 600px;
+    height: 40px;
+}
+
+h2 {
+    color: #000;
+    margin-left: 10vw;
+    font-size: 30px;
+}
+
+h3 {
+    color: #000;
+    text-align: center;
+    width: 650px;
+    border: 3px double #000000;
+    font-size: 24px;
+}
+
+p {
+    color: #000;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 22px;
+    text-align: justify;
+}

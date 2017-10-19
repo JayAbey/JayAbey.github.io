@@ -1,0 +1,76 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+//mixins
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+
+/*3 menus*/
+*{
+  box-sizing:border-box;
+}
+.container-VM{
+  position: absolute;
+  top:22%;
+  left:7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+    img{
+      width:350px;
+      height:490px;
+      @include border-radius(10px);
+      cursor: pointer;
+    }
+    a{
+      text-decoration: none;
+    }
+}
+.col-VM{
+  padding: 20px;
+}
+.text-block1{
+  position:absolute;
+  bottom:20%;
+  left:1.7%;
+  width:30%;
+  height:10%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+.text-block2{
+  position:absolute;
+  bottom:20%;
+  left:35%;
+  width:30%;
+  height:10%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+.text-block3{
+  position:absolute;
+  bottom:20%;
+  left:68.4%;
+  width:30%;
+  height:10%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+p.text{
+  padding:10px;
+  margin:0px;
+  color: $secondary-color;
+  font-family: $body-font;
+  font-size: 25px;
+  text-align: center;
+}

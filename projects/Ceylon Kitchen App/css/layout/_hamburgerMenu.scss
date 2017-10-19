@@ -1,0 +1,88 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+//mixins
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+
+.sidenav{
+  position: absolute;
+  top:0;
+  left: -300px;
+  width:250px;
+  height:100%;
+  max-height: 100%;
+  background:$primary-color;
+  opacity: 0.9;
+  border-color: $secondary-color;
+  border-style: ridge;
+  border-left: none;
+  border-top:none;
+  border-bottom:none;
+  @include border-radius(10px);
+  transition: .5s;
+  z-index:3;
+    a{
+      text-decoration: none;
+      color: $secondary-color;
+    }
+}
+.sidenav--close-btn{
+  position:absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 25px;
+}
+.sidenav--menu{
+  margin-top: 120px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: $base-font;
+  li{
+      color: $primary-color;
+      opacity:0.7;
+    }
+}
+.sidenav--overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  height:0;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.copyright{
+  font-family: $base-font;
+  text-decoration: none;
+  color: $secondary-color;
+  margin-left: 15%;
+  font-size: 15px;
+    img{
+      width: 30px;
+      height:30px;
+    }
+}
+.clientInfo{
+  padding-top:120px;
+  font-family: $base-font;
+  text-decoration: none;
+  color: $secondary-color;
+  margin-left: 15%;
+  font-size: 12px;
+}
+.devInfo{
+  font-family: $base-font;
+  text-decoration: none;
+  color: $secondary-color;
+  margin-left: 15%;
+  font-size: 12px;
+}

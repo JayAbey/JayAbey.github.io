@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<!-- HTML validated using "https://validator.w3.org/#validate_by_input" -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ceylon Kitchen | Beverages</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google fonts - Ubuntu(for base styles) and Droid Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!--fontawsome icons-->
+    <script src="https://use.fontawesome.com/1ad8e69b61.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <nav class="main-nav">
+            <span class="main-nav--open-btn" onclick="openNav()">&#9776</span>
+            <div id="feedback" class="feedback-btn"><a href="index.html#post-feedback">Leave feedback</a></div>
+            <div id="quickSearch"><input class="search" id="search" type="text" name="search" placeholder="Quick search"></div>
+            <div id="maori" class="language" onclick='changeToMaori()' value="changeToMaori"><a href="#">Maori</a></div>
+        </nav>
+    </header>
+
+    <!--Hamburger Menu-->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="sidenav--close-btn" onclick="closeNav()">&times;</a>
+        <ul id="sidenav--menu" class="sidenav--menu">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Home</a></li>
+            <li><a href="view_menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;View menu</a></li>
+            <li><a href="todays_special.html"><i class="fa fa-trophy" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Today's special</a></li>
+            <li><a href="special_offers.html"><i class="fa fa-gift" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Special offers</a></li>
+        </ul>
+        <div class="clientInfo">
+            <p>Ceylon Kitchen</p>
+            <p>620 Colombo Street</p>
+            <p>Christchurch Central</p>
+            <p>021 230 0348</p>
+            <p>www.ceylon-kitchen.co.nz</p>
+        </div>
+        <div class="copyright">
+            <p><img src="img/Copyright-symbol-vector.png" alt="copy right symbol">All rights reserved</p>
+        </div>
+        <div class="devInfo">
+            <p>DIRECT Web|UX developers</p>
+            <p>www.direct.co.nz</p>
+            <p>0221 234 567</p>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="view_menu.html">
+            <!--fontawsome back button icon - copyright to "http://fontawesome.io/icon/chevron-left/"-->
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp; Back
+        </a>
+    </div>
+
+    <div class="beverages-page-title">
+        <p>Try one of our Sri Lankan specials with your favorite dish</p>
+    </div>
+
+    <section class="container-B">
+        <div class="col-B">
+            <img src="img/faluda.jpg" alt="<br/>1 cup of Sri Lankan faluda mix with a scoop of vanilla ice cream and jelly crystals on top<br/><br/>Ingredients<br/>Sri Lankan Faluda mix, Full cream milk, Strawberry Jelly mix, Vanilla ice cream, Kas kasa seeds">
+            <div class="text-block-B-1">
+                <p class="text-B">Faluda</p>
+            </div>
+        </div>
+        <div class="col-B">
+            <img src="img/tea.jpg" alt="<br/>1 cup of Sri Lankan tea with or without full cream milk<br/><br/>Ingredients<br/>Sri Lankan tea, Full cream milk, Sugar">
+            <div class="text-block-B-2">
+                <p class="text-B">Tea</p>
+            </div>
+        </div>
+        <div class="col-B">
+            <img src="img/coffee.jpg" alt="<br/>1 cup of Sri Lankan coffee with or without full cream milk<br/><br/>Ingredients<br/>Sri Lankan coffee, Full cream milk, Sugar">
+            <div class="text-block-B-3">
+                <p class="text-B">Coffee</p>
+            </div>
+        </div>
+    </section>
+
+    <!--The Modal-->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <img class="modal-content" id="img01" alt="modal image">
+
+        <section class="info-container">
+            <div class="col">
+                <img class="info-icons" src="img/scale.png" alt="scale icon">
+                <p>200 ml</p>
+            </div>
+            <div class="col">
+                <img class="info-icons" src="img/clock.png" alt="clock icon">
+                <p>5 min</p>
+            </div>
+            <div class="col">
+                <img class="info-icons" src="img/price.png" alt="price icon">
+                <p>$ 4.00</p>
+            </div>
+        </section>
+        <div class="item-description">
+            <div id="description" class="description"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

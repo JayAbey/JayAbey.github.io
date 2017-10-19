@@ -1,0 +1,16 @@
+/*Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR"*/
+.menu-swiper {
+  .swiper-container {
+    position: absolute;
+    top:60%;
+    width: 100%;
+    height: 307px;
+  }
+  .swiper-slide {
+    img{
+      width: 100%;
+      height: 307px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ceylon Kitchen | Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google fonts - Ubuntu(for base styles) and Droid Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!--Image Slider - Swiper style-->
+    <link rel="stylesheet" href="slider_swiper/Swiper-3.4.2/dist/css/swiper.min.css">
+
+    <!--Image Slider - Swiper js-->
+    <script src="slider_swiper/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!--fontawsome icons-->
+    <script src="https://use.fontawesome.com/1ad8e69b61.js"></script>
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <header>
+        <nav class="main-nav">
+            <span class="main-nav--open-btn" onclick="openNav()">&#9776</span>
+            <div id="feedback" class="feedback-btn"><a href="#post-feedback">Leave feedback</a></div>
+            <div id="quickSearch"><input class="search" id="search" type="text" name="search" placeholder="Quick search"></div>
+            <div id="maori" class="language" onclick='changeToMaori("img/maori-excellent.png", "img/maori-verygood.png", "img/maori-good.png", "img/maori-average.png", "img/maori-poor.png")'
+                value="changeToMaori">
+                <a href="#">Maori</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Hamburger Menu-->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="sidenav--close-btn" onclick="closeNav()">&times;</a>
+        <ul id="sidenav--menu" class="sidenav--menu">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Home</a></li>
+            <li><a href="view_menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;View menu</a></li>
+            <li><a href="todays_special.html"><i class="fa fa-trophy" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Today's special</a></li>
+            <li><a href="special_offers.html"><i class="fa fa-gift" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Special offers</a></li>
+        </ul>
+        <div class="clientInfo">
+            <p>Ceylon Kitchen</p>
+            <p>620 Colombo Street</p>
+            <p>Christchurch Central</p>
+            <p>021 230 0348</p>
+            <p>www.ceylon-kitchen.co.nz</p>
+        </div>
+        <div class="copyright">
+            <p><img src="img/Copyright-symbol-vector.png" alt="copy right symbol">All rights reserved</p>
+        </div>
+        <div class="devInfo">
+            <p>DIRECT Web|UX developers</p>
+            <p>www.direct.co.nz</p>
+            <p>0221 234 567</p>
+        </div>
+    </div>
+
+    <!--Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR" -->
+    <div class="index-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="todays_special.html">
+                    <img src="img/todays_special.jpg" alt="today's special">
+                    <div class="index-label"><a href="todays_special.html">Today's Special!</a></div>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="special_offers.html">
+                    <img src="img/special_offer.jpg" alt="special offers">
+                    <div class="index-label"><a href="special_offers.html">Lunch Special Offer!</a></div>
+            </a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+    </div>
+
+    <div id="viewMenu" class="view-menu"><a href="view_menu.html">View menu</a></div>
+
+    <div id="post-feedback" class="feedback">
+        <p id="title" class="title">How was it?!</p>
+
+        <section class="smileys">
+            <div id="col-smilleys" class="col-smilleys">
+                <img id="excellent" src="img/excellent-smiley.png" alt="excellent smiley icon">
+                <p id="excellentP">excellent</p>
+            </div>
+            <div class="col-smilleys">
+                <img id="verygood" src="img/verygood-smiley.png" alt="verygood smiley icon">
+                <p id="verygoodP">very good</p>
+            </div>
+            <div class="col-smilleys">
+                <img id="good" src="img/good-smiley.png" alt="good smiley icon">
+                <p id="goodP">good</p>
+            </div>
+            <div class="col-smilleys">
+                <img id="average" src="img/average-smiley.png" alt="average smiley icon">
+                <p id="averageP">average</p>
+            </div>
+            <div class="col-smilleys">
+                <img id="poor" src="img/poor-smiley.png" alt="poor smiley icon">
+                <p id="poorP">poor</p>
+            </div>
+        </section>
+    </div>
+
+    <!--The Posted feedback section-->
+    <div id="posted-feedback" class="posted-feedback">
+        <table>
+            <tr>
+                <td><img class="feedback-smiley" id="img02"></td>
+                <td id="feedback-message"></td>
+                <div id="commentBox"><input class="comment" id="comment" type="text" name="comment" placeholder="Tell us what you think"></div>
+                <div id="post" class="post" onclick="showMessage()" value="showMessage">Post</div>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        /*Image slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR" */
+        var mySwiper = new Swiper('.swiper-container', {
+            // pagination
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 2200,
+            autoplayDisableOnInteraction: false
+        });
+
+    </script>
+</body>
+
+</html>

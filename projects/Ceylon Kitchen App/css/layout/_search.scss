@@ -1,0 +1,20 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+.search{
+  background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png)  no-repeat 9px center;
+  padding: 10px 10px 10px 35px;
+  width:150px;
+  border-radius: 10px;
+  margin-left: 700%;
+  margin-top: 10%;
+  font-family: $base-font;
+}
+.search:focus{
+  width:250px;
+  background-color: $primary-color;
+}

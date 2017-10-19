@@ -1,0 +1,20 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+/*Back button*/
+.todays-special-back{
+  position:absolute;
+  top:10%;
+  left:2%;
+  z-index: 2;
+    a{
+      text-decoration: none;
+      font-size: 25px;
+      font-family: $base-font;
+      color: $secondary-color;
+    }
+}

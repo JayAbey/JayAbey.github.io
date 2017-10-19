@@ -1,0 +1,33 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+.view-menu {
+position : absolute;
+display : flex;
+flex-direction : column;
+justify-content : center;
+align-items : center;
+z-index : 4;
+top : 56%;
+margin-left : 77%;
+width : 18%;
+padding : 10px 10px 10px 10px;
+border-radius : 10px;
+font-size : 20px;
+text-decoration : none;
+border-color : $secondary-color;
+border-style : ridge;
+font-weight : bold;
+background : $primary-color;
+opacity : 0.60000002384185791015625;
+    a {
+        text-decoration : none;
+        color : $secondary-color;
+        transition : background-color 0.3s;
+        font-family : $base-font;
+        }
+}

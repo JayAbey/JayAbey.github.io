@@ -1,0 +1,576 @@
+/**************Modules**********/
+
+
+/*Header & Footer*/
+@charset "UTF-8";
+
+/* ------------------------------------------
+  Dan's Nav styles
+--------------------------------------------- */
+/* Navbar - 3 Drops */
+
+.logo {
+  margin: 3px 3px 0px 3px;
+}
+.nav-collapse {
+  background: #2e2728;
+}
+/*Jay's edit*/
+.nav-collapse ul li{
+  width:300px;
+}
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 10;
+}
+.main-nav li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #2e2728;
+  border-top: 0;
+}
+li .main-nav { 
+  display: none; 
+}
+.main-nav li a {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #919191;
+  font-family: 'Raleway', Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.main-nav li a:hover {
+  background: #2e2728;
+}
+li:hover > .main-nav {
+  display: block;
+  position: absolute;
+}
+li:hover li {
+  float: none;
+}
+li:hover a {
+  background: #2e2728;
+}
+li:hover li a:hover {
+  color: #BE5B70;
+}
+.main-nav .main-nav .main-nav {
+  left: 100%;
+  top: 0;
+}
+.main-nav:before, .main-nav:after {
+  content: " ";
+  display: table;
+}
+.main-nav:after {
+  clear: both;
+}
+
+/* Search Box */
+form {
+  width:500px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+.search {
+  padding: 1em 1em 0px 0px;
+  background: #2e2728;
+  border: 1px solid #2e2728;
+  border-bottom: 1px solid #919191;
+  text-transform: uppercase;
+}
+input {
+  color: #BE5B70;
+}
+
+/* ------------------------------------------
+  RESET
+--------------------------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+/*Important to have*/
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    width: 25%;
+  }
+}
+
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+/*not that important*/
+@font-face {
+  font-family: "responsivenav";
+  src:url("../icons/responsivenav.eot");
+  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../icons/responsivenav.ttf") format("truetype"),
+    url("../icons/responsivenav.woff") format("woff"),
+    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*without this part you get a hyperlinked 'menu' text with the hamburger*/
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: right;
+}
+
+/*important - this is the hamburger part*/
+.nav-toggle:before {
+  color: #BE5B70; /* Edit this to change the icon color */
+  font-family: "responsivenav", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 28px;
+  text-transform: none;
+  position: absolute;
+  content: "≡";
+  text-indent: 0;
+  text-align: center;
+  line-height: 55px;
+  speak: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*without this part you get a hyperlinked 'menu' text with the hamburger*/
+.nav-toggle.active::before {
+  font-size: 24px;
+  content:"x";
+}
+
+
+
+/* Footer */
+footer {
+  text-decoration: none;
+  background-color: #2e2728;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  font-family: 'Raleway', Arial, Helvetica;
+  font-size: 18px;
+  display: inline-block;
+  clear: both;
+  margin-top: 3em;
+}
+
+footer a {
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  background-color: #2e2728;
+  color: #919191;
+}
+
+.footer-nav a:hover {
+  background-color: #2e2728;
+  color: #BE5B70;
+}
+
+.footer-nav li {
+  display: inline-block;
+  padding: 0px 50px 0px 0px;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  text-decoration: none;
+}
+
+/*Responsive Nav CSS*/
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  zoom: 1;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/*Page Name*/
+.page-name{
+    padding-top: 5%;
+}
+.page-name h1{
+color: black;
+text-align: center;
+}
+
+/*-----------------Artist and Student Gallery Pages----------------*/
+/*column layout*/
+*{
+  box-sizing:border-box;
+}
+.col1, .col2, .col3{
+  width:100%;
+  }
+/*Gallery*/
+.gallery{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.gallery div:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+/*Gallery-item*/
+.gallery-item{
+    width:628px;
+    height: 450px;
+    padding: 10px;
+    cursor: pointer;
+}
+.gallery-item alt{
+    visibility: hidden;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#description {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: right;
+    color: white;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/*Responsiveness of the page*/
+@media (min-width: 600px) {
+.col1 {
+    width: 60%;
+    -webkit-order: 2;
+    order: 2;
+    }
+.col2 {
+    width: 40%;
+    -webkit-order: 1;
+    order: 1;
+    }
+.col3 {
+    width: 100%;
+    -webkit-order: 3;
+    order: 3;
+    }
+}
+@media (min-width: 800px) {
+.col2 {
+    width: 20%;
+    }
+.col3 {
+    width: 20%;
+    }
+}
+
+/*-----------------Artist and Student News Pages----------------*/
+/*Page Name*/
+.news-page-name{
+    padding-top: 5%;
+  z-index:1;
+}
+.news-page-name h1{
+color: black;
+text-align: center;
+  z-index:1;
+}
+.page-layout{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+/*Article*/
+.main-article{
+    top:25%;
+    width:100%;
+    margin-right: auto; 
+    text-align: left;
+    position: fixed;
+}
+.main-article h5{
+    margin-left:500px;
+}
+.main-article-image{
+    width:1000px;  
+    height:400px;
+}
+.main-article p{
+    word-wrap: break-word;
+    width: 1000px;
+    top: 60%;
+    left:0;
+}
+.heading{
+    font-weight: bold;
+    text-align: center;
+}
+.s-heading{
+    margin-top:8%;
+    font-weight: bold;
+    float:right;
+    margin-right: 10%;
+}
+
+/*Subscribe bar*/
+#subscribe{
+    top:0%;
+    position: fixed;
+    /*left:75%;*/
+    background-color: white;
+    /*width:400px;*/
+    width:100%;
+    height: 250px;
+    z-index:-1;
+}
+#subscribe button{
+cursor: pointer;
+margin-top:0;
+margin-left:93%;
+}
+#subscribe input{
+    width: 300px;
+    margin-top:1%;
+margin-left:75%;
+}
+/*Recommended Articles*/
+.read-more{
+    font-style: italic;
+}
+.recommended{
+    padding: 100px;
+    float: right;
+    width: 30%;
+  z-index:-2;
+}
+.recommended-article{
+    font-size: 1rem;
+    padding: 2rem;
+}
+.recommended-article:not(:last-child) {
+     border-bottom: 1px solid #ddd; 
+}
+
+/*-----------------Artist and Student Events Pages----------------*/
+/*Page Name*/
+.page-heading p{
+font-size: 60px; 
+color: black;
+float: left;
+margin-left:25%;
+padding-top: 2%;
+}
+.page-heading h3{
+    font-size: 30px;
+    padding-top: 10%;
+    float: left;
+}
+/*Calendar*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.calendar {
+	background:white;
+	color: black
+	padding: 0.5em 0.5em 1em;
+	max-width: 20em;
+	min-height: 15em;
+	margin: 2em auto;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    margin-right: 0;
+    margin-left:60%
+}
+.calendar div, li, ul {
+	margin: 0;
+    margin-top:0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+.calendar ul {
+	list-style-type: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.monthname {
+  width: 18em;
+}
+.pointer {
+  cursor: pointer;
+}
+.group:after {
+	content: "";
+	display: table;
+	/*clear: both;*/
+}
+.calendar p {
+	margin-bottom: .5em;
+	color:orange;
+    font-weight: bold;
+}
+.calendar li {
+	float: left;
+	width: -webkit-calc(100%/7);
+	text-align: center;
+	padding: .25em 0;
+	cursor: pointer;
+}
+.calendar li:hover, .calendar li.red {
+	color:orange;
+}
+.calendar li:nth-child(-n+7) {
+	color: #666;
+}
+.center {
+	text-align: center;
+}
+
+/*Event Image*/
+.event-month{
+    border: 1px solid #A6A6A6;
+    margin: 10px; 
+}
+.event-month h4{
+    margin-left: 5px;
+}
+.event{
+  	position: relative;
+	margin: 2px;
+	padding: 5px;
+	overflow: hidden;  
+}
+.event-image{
+    width:200px;
+    height: 150px;
+    float:left;
+    cursor: pointer;
+}
+.event p{
+    margin-left: 205px;
+}

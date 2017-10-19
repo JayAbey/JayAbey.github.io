@@ -1,0 +1,30 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+header{
+  position:fixed;
+  width:100%;
+  z-index: 2;
+}
+.main-nav{
+  list-style: none;
+  background-color:$primary-color;
+  padding-bottom: 1%;
+    div{
+      display: inline-block;
+      font-family: $base-font;
+      width: 120px;
+      }
+}
+.main-nav--open-btn{
+  position: absolute;
+  top: 20px;
+  left:25px;
+  color: $secondary-color;
+  font-size: 24px;
+  cursor: pointer;
+}

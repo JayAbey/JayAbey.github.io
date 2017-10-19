@@ -1,0 +1,78 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+
+* {
+box-sizing : border-box;
+}
+.container-l {
+position : absolute;
+top : 17%;
+left : 20%;
+display : flex;
+flex-direction : row;
+        img {
+            width : 400px;
+            height : 300px;
+            border-radius : 10px;
+            }
+        a {
+            text-decoration : none;
+        }
+}
+.text-block1-l {
+position : absolute;
+bottom : 15%;
+left : 0;
+width : 49.7%;
+height : 10%;
+background-color : $primary-color;
+opacity : 0.60000002384185791015625;
+}
+.text-block2-l {
+position : absolute;
+bottom : 15%;
+left : 50.2%;
+width : 49.8%;
+height : 10%;
+background-color : $primary-color;
+opacity : 0.60000002384185791015625;
+}
+p.text-l {
+padding : 3px;
+margin : 0;
+color : $secondary-color;
+font-family : $body-font;
+font-size : 25px;
+text-align : center;
+}
+.specials {
+position : absolute;
+display : flex;
+flex-direction : column;
+justify-content : center;
+align-items : center;
+z-index : 1;
+top : 60%;
+margin-left : 10%;
+width : 15%;
+padding : 10px 10px 10px 10px;
+border-radius : 10px;
+font-size : 50px;
+text-decoration : none;
+background : $primary-color;
+opacity : 0.699999988079071044921875;
+border-color : $secondary-color;
+border-style : ridge;
+border-top : none;
+    a {
+        text-decoration : none;
+        color : $secondary-color;
+        transition : background-color 0.3s;
+        font-family : $base-font;
+        }
+}

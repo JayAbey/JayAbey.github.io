@@ -1,0 +1,102 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+
+//mixins
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+
+/*6 menu items*/
+*{
+  box-sizing:border-box;
+}
+.container-s{
+  position: absolute;
+  top:13%;
+  left:4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+    img{
+      width:400px;
+      height:300px;
+      @include border-radius(10px);
+      cursor: pointer;
+    }
+}
+.col-s{
+  padding: 13px;
+}
+.text-block1-s{
+  position:absolute;
+  bottom:55%;
+  left:1%;
+  width:30.5%;
+  height:7%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+.text-block2-s{
+  position:absolute;
+  bottom:55%;
+  left:31.5%;
+  width:31%;
+  height:7%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+.text-block3-s{
+  position:absolute;
+  bottom:55%;
+  left:62.6%;
+  width:30.5%;
+  height:7%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+.text-block4-s{
+  position:absolute;
+  bottom:5%;
+  left:1%;
+  width:30.5%;
+  height:7%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+.text-block5-s{
+  position:absolute;
+  bottom:5%;
+  left:31.5%;
+  width:31%;
+  height:7%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+.text-block6-s{
+  position:absolute;
+  bottom:5%;
+  left:62.6%;
+  width:30.5%;
+  height:7%;
+  background-color: $primary-color;
+  opacity: 0.6;
+}
+p.text-s{
+  padding:5px;
+  margin:0px;
+  color: $secondary-color;
+  font-family: $body-font;
+  font-size: 25px;
+  text-align: center;
+}

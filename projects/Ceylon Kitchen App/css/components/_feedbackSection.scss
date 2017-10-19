@@ -1,0 +1,91 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+.feedback {
+position : absolute;
+background-color : $primary-color;
+width : 100%;
+height : 268px;
+z-index : 2;
+}
+.smileys {
+position : absolute;
+top : 30%;
+left : 32%;
+display : flex;
+font-family : $body-font;
+font-size : 15px;
+}
+.col-smilleys {
+    padding : 10px;
+    color : $secondary-color;
+    img {
+        width : 80px;
+        height : 80px;
+        cursor : pointer;
+        }
+    p {
+        text-align : center;
+        cursor : pointer;
+        }
+}
+.title {
+margin-left : 45%;
+color : $secondary-color;
+font-family : $body-font;
+font-size : 25px;
+}
+.comment {
+position : absolute;
+top : 73%;
+padding : 10px 10px 10px 35px;
+width : 250px;
+border-radius : 10px;
+margin-left : 37%;
+margin-top : 0;
+font-family : $base-font;
+}
+.comment:focus {
+height : 71px;
+background-color : $secondary-color;
+}
+.post {
+position : absolute;
+display : flex;
+flex-direction : column;
+justify-content : center;
+align-items : center;
+z-index : 4;
+top : 73%;
+margin-left : 78%;
+width : 15%;
+padding : 10px 10px 10px 10px;
+border-radius : 10px;
+font-size : 20px;
+text-decoration : none;
+background : $primary-color;
+opacity : 0.699999988079071044921875;
+border-color : $secondary-color;
+border-style : ridge;
+cursor : pointer;
+color : $secondary-color;
+font-family : $base-font;
+}
+.posted-feedback {
+display : none;
+position : absolute;
+background-color : $primary-color;
+left : 23%;
+height : 268px;
+z-index : 3;
+}
+#feedback-message {
+text-align : center;
+color : $secondary-color;
+font-size : 30px;
+font-family : $body-font;
+}

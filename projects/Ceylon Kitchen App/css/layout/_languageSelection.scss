@@ -1,0 +1,23 @@
+// variables
+$base-font: 'Ubuntu', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+$primary-color: black;
+$secondary-color:white;
+
+
+.language{
+  float: right;
+    a{
+      font-family: $base-font;
+      text-decoration: none;
+      color: $secondary-color;
+      display: block;
+      padding: 15px 0;
+      transition: .3s background-color;
+    }
+    a.active{
+      color: #444;
+      background-color: $secondary-color;
+      cursor: default;
+    }
+}

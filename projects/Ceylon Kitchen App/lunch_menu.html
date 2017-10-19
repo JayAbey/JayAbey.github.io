@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<!-- HTML validated using "https://validator.w3.org/#validate_by_input" -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ceylon Kitchen | Lunch menu</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google fonts - Ubuntu(for base styles) and Droid Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu" rel="stylesheet">
+
+    <!--Image Slider - Swiper style-->
+    <link rel="stylesheet" href="slider_swiper/Swiper-3.4.2/dist/css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!--fontawsome icons-->
+    <script src="https://use.fontawesome.com/1ad8e69b61.js"></script>
+
+    <!--Image Slider - Swiper js-->
+    <script src="slider_swiper/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <nav class="main-nav">
+            <span class="main-nav--open-btn" onclick="openNav()">&#9776</span>
+            <div id="feedback" class="feedback-btn"><a href="index.html#post-feedback">Leave feedback</a></div>
+            <div id="quickSearch"><input class="search" id="search" type="text" name="search" placeholder="Quick search"></div>
+            <div id="maori" class="language" onclick='changeToMaori()' value="changeToMaori"><a href="#">Maori</a></div>
+        </nav>
+    </header>
+
+    <!--Hamburger Menu-->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="sidenav--close-btn" onclick="closeNav()">&times;</a>
+        <ul id="sidenav--menu" class="sidenav--menu">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Home</a></li>
+            <li><a href="view_menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;View menu</a></li>
+            <li><a href="todays_special.html"><i class="fa fa-trophy" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Today's special</a></li>
+            <li><a href="special_offers.html"><i class="fa fa-gift" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Special offers</a></li>
+        </ul>
+        <div class="clientInfo">
+            <p>Ceylon Kitchen</p>
+            <p>620 Colombo Street</p>
+            <p>Christchurch Central</p>
+            <p>021 230 0348</p>
+            <p>www.ceylon-kitchen.co.nz</p>
+        </div>
+        <div class="copyright">
+            <p><img src="img/Copyright-symbol-vector.png" alt="copy right symbol">All rights reserved</p>
+        </div>
+        <div class="devInfo">
+            <p>DIRECT Web|UX developers</p>
+            <p>www.direct.co.nz</p>
+            <p>0221 234 567</p>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="view_menu.html">
+            <!--fontawsome back button icon - copyright to "http://fontawesome.io/icon/chevron-left/"-->
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp; Back
+        </a>
+    </div>
+
+    <div class="page-title">
+        <p>Choose your category</p>
+    </div>
+
+    <section class="container-l">
+        <div class="col-l">
+            <a href="lunch_starters.html">
+                <img src="img/lunch_starters.jpg" alt="starters menu image">
+                    <div class="text-block1-l">
+                        <p class="text-l">Starters</p>
+                        </div>
+            </a>
+            <a href="lunch_mains.html">
+                <img src="img/lunch_mains.jpg" alt="Mains menu image">
+                <div class="text-block2-l">
+                    <p class="text-l">Mains</p>
+                    </div>
+            </a>
+        </div>
+    </section>
+
+    <!--Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR" -->
+    <div class="menu-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="todays_special.html">
+                <img src="img/todays_special.png" alt="lunch special1">
+                </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="special_offers.html">
+                <img src="img/lunch_specials.png" alt="lunch special2">
+                </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="specials"><a href="special_offers.html">Lunch specials</a></div>
+
+    <script>
+        /*Image slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR" */
+        var mySwiper = new Swiper('.swiper-container', {
+            // pagination
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 2200,
+            autoplayDisableOnInteraction: false
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<!-- HTML validated using "https://validator.w3.org/#validate_by_input" -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ceylon Kitchen | Special Offers</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google fonts - Ubuntu(for base styles) and Droid Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!--fontawsome icons-->
+    <script src="https://use.fontawesome.com/1ad8e69b61.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <nav class="main-nav">
+            <span class="main-nav--open-btn" onclick="openNav()">&#9776</span>
+            <div id="feedback" class="feedback-btn"><a href="index.html#post-feedback">Leave feedback</a></div>
+            <div id="quickSearch"><input class="search" id="search" type="text" name="search" placeholder="Quick search"></div>
+            <div id="maori" class="language" onclick='changeToMaori()' value="changeToMaori"><a href="#">Maori</a></div>
+        </nav>
+    </header>
+
+    <!--Hamburger Menu-->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="sidenav--close-btn" onclick="closeNav()">&times;</a>
+        <ul id="sidenav--menu" class="sidenav--menu">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Home</a></li>
+            <li><a href="view_menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;View menu</a></li>
+            <li><a href="todays_special.html"><i class="fa fa-trophy" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Today's special</a></li>
+            <li><a href="special_offers.html"><i class="fa fa-gift" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Special offers</a></li>
+        </ul>
+        <div class="clientInfo">
+            <p>Ceylon Kitchen</p>
+            <p>620 Colombo Street</p>
+            <p>Christchurch Central</p>
+            <p>021 230 0348</p>
+            <p>www.ceylon-kitchen.co.nz</p>
+        </div>
+        <div class="copyright">
+            <p><img src="img/Copyright-symbol-vector.png" alt="copy right symbol">All rights reserved</p>
+        </div>
+        <div class="devInfo">
+            <p>DIRECT Web|UX developers</p>
+            <p>www.direct.co.nz</p>
+            <p>0221 234 567</p>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="index.html">
+            <!--fontawsome back button icon - copyright to "http://fontawesome.io/icon/chevron-left/"-->
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp; Back
+        </a>
+    </div>
+
+    <div class="special-offers-page-title">
+        <p>Special offers!</p>
+    </div>
+
+    <section class="container-SO">
+        <div class="col-SO">
+            <img src="img/special_offer.png" alt="<br/>20% Off on our decadent Chicken curry &amp; rice dish!<br/><br/>Ingredients<br/>Jasmine rice, Chicken, Scraped coconut, Red onions, Green chillies, Chilli powder, Salt, Mustard seeds, Ginger, Garlic, Turmeric powder">
+            <div class="text-block-SO-1">
+                <p class="text-SO">Chicken curry &amp; rice</p>
+            </div>
+        </div>
+        <div class="col-SO">
+            <img src="img/lunch_specials_2.png" alt="<br/>Free Drink with our decadent Cashew curry &amp; rice dish!<br/><br/>Ingredients<br/>Jasmine rice, Cashews, Scraped coconut, Red onions, Green chillies, Chilli powder, Salt, Mustard seeds, Ginger, Garlic, Turmeric powder, Cumin, Bay leaves">
+            <div class="text-block-SO-2">
+                <p class="text-SO">Cashew curry &amp; rice</p>
+            </div>
+        </div>
+        <div class="col-SO">
+            <img src="img/special_offer_3.jpg" alt="<br/>10% Off on our decadent Milk rice &amp; curries dish!<br/><br/>Ingredients<br/>Jasmine rice, Coconut cream, Salmon, Red onions, Green chillies, Salt, Pepper, Turmeric powder, Ginger, Garlic">
+            <div class="text-block-SO-3">
+                <p class="text-SO">Milk rice &amp; curry</p>
+            </div>
+        </div>
+    </section>
+
+    <!--The Modal-->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <img class="modal-content" id="img01" alt="modal image">
+
+        <section class="info-container">
+            <div class="col">
+                <img class="info-icons" src="img/scale.png" alt="scale icon">
+                <p>400g</p>
+            </div>
+            <div class="col">
+                <img class="info-icons" src="img/clock.png" alt="clock icon">
+                <p>5 min</p>
+            </div>
+            <div class="col">
+                <img class="info-icons" src="img/medium_spicy.png" alt="medium spicy icon">
+                <p>medium spicy</p>
+            </div>
+            <div class="col">
+                <img class="info-icons" src="img/GF.png" alt="GF icon">
+                <p>gluten free</p>
+            </div>
+            <div class="col">
+                <img class="info-icons" src="img/DF.png" alt="DF icon">
+                <p>dairy free</p>
+            </div>
+            <div class="col">
+                <img class="info-icons" src="img/price.png" alt="price icon">
+                <p>$ 12.00</p>
+            </div>
+        </section>
+        <div class="item-description">
+            <div id="description" class="description-modal"></div>
+        </div>
+
+    </div>
+
+    <div class="special-offer-label-1">20% Off!</div>
+    <div class="special-offer-label-2">Free Drink!</div>
+    <div class="special-offer-label-3">10% Off!</div>
+
+</body>
+
+</html>
