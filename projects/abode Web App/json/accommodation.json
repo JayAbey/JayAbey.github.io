@@ -1,0 +1,88 @@
+{
+    "accommodation": [
+        {
+            "images": ["images/5.jpg", "images/5_1.jpeg", "images/5_2.jpeg"],
+            "name": "Comfort among the Chaos",
+            "type": "Motel",
+            "guests": "2-4 people",
+            "price": 90,
+            "period": [3, 4, 5, 6, 7, 8, 9, 10],
+            "location": "Auckland",
+            "meals": false,
+            "wheelChairAccess": true,
+            "petsAllowed" : false,
+            "rooms" : "2",
+            "shower" : "1"
+        },
+        {
+            "images": ["images/2.jpg", "images/2_1.jpeg", "images/2_2.jpeg"],
+            "name": "Victorian aged interior in Dunedin",
+            "type": "Hostel",
+            "guests": "1-6 people",
+            "price": 30,
+            "period": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "location": "Dunedin",
+            "meals": true,
+            "wheelChairAccess": true,
+            "petsAllowed" : true,
+            "rooms" : "3",
+            "shower" : "2"
+        },
+        {
+            "images": ["images/4.jpg", "images/4_1.jpg", "images/4_2.jpg"],
+            "name": "Holiday by the waves in Napier",
+            "type": "Lodge",
+            "guests": "2-5 people",
+            "price": 200,
+            "period": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "location": "Napier",
+            "meals": false,
+            "wheelChairAccess": false,
+            "petsAllowed" : false,
+            "rooms" : "3",
+            "shower" : "2"
+        },
+        {
+            "images": ["images/1.jpg", "images/1_1.jpg", "images/1_2.jpg"],
+            "name": "A sanctuary in Nelson",
+            "type": "Hotel",
+            "guests": "1-2 people",
+            "price": 157,
+            "period": [1, 2, 3, 4, 5],
+            "location": "Nelson",
+            "meals": true,
+            "wheelChairAccess": true,
+            "petsAllowed" : true,
+            "rooms" : "1",
+            "shower" : "1"
+        },
+        {
+            "images": ["images/3.jpg", "images/3_1.jpg"],
+            "name": "Getaway by the mountains",
+            "type": "Bach",
+            "guests": "2-3 people",
+            "price": 175,
+            "period": [1, 2, 3, 4, 5],
+            "location": "Queenstown",
+            "meals": true,
+            "wheelChairAccess": false,
+            "petsAllowed" : true,
+            "rooms" : "2",
+            "shower" : "1"
+        },
+        {
+            "images": ["images/6.jpg", "images/6_1.jpeg", "images/6_2.jpeg"],
+            "name": "Luxurious getaway in the capitol city",
+            "type": "House",
+            "guests": "1-4 people",
+            "price": 240,
+            "period": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "location": "Wellington",
+            "meals": false,
+             "wheelChairAccess": true,
+            "petsAllowed" : false,
+            "rooms" : "3",
+            "shower" : "2"
+        }
+    ]
+}

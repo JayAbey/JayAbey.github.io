@@ -1,0 +1,48 @@
+@mixin border-radius($radius){
+-webkit-border-radius: $radius;
+-moz-border-radius: $radius;
+border-radius: $radius;
+}
+
+//variables
+$primary-font: 'Mallanna', sans-serif;
+$primary-font-color: #a4a4a4;
+$secondary-color: #c74343;
+
+/**********Welcome Page**********/
+.welcome-background{
+    background: url("../images/fern.png") no-repeat fixed center;
+}
+.logo img{
+    margin: 0;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.display-text{
+    margin-top: 28%;
+        p{
+            margin:0;
+            font-family: $primary-font;
+            color: $primary-font-color;
+            text-align: center;
+            font-size: 40px;
+        }
+}
+.start-button {
+  position: absolute;
+  margin:0;
+  top: 65%;
+  left:40%;
+  width: 18%;
+  padding: 10px 10px 10px 10px;
+@include border-radius(10px);
+  font-size: 20px;
+  background: $secondary-color;
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: $primary-font;
+    }
+}

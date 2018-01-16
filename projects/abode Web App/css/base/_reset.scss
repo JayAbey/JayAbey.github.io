@@ -1,0 +1,245 @@
+@mixin background-size($size){
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+html {
+@include background-size(cover);
+}
+/*****Responsiveness*****/
+  /*mobile width upto 480px*/
+@media only screen and (max-width: 480px){
+    /*Welcome page*/
+    .logo img{
+      top:35%;
+      left:50%;
+    }
+    .display-text{
+      margin-top: 75%;
+    }
+    .start-button{
+      width : 80%;
+      top:65%;
+      left:10%;  
+      margin: 0;  
+      text-align: center;
+    }
+/*abode page*/    
+.logo-home img{
+      margin: 0;
+      top:10%;
+      left: 50%;
+      width: 380px;
+    }
+.filtering-section{
+  margin-top:35%;
+}
+/*Search bar*/
+#search-location{
+  margin-left:6%;
+  font-size: 16px;
+}
+.period-of-stay{
+  margin-left:30%;
+}
+.checkout{
+  margin-left:10%;
+}
+.checkin, .checkout{
+ font-size:16px;
+}
+/*guests and price*/
+.container{
+  margin-left: 8%;
+}
+.col {
+  font-size: 16px;
+}
+.accommo-type{
+  margin-left: 14%;
+  font-size: 16px;
+}
+.submitButton{
+  top: 52%;
+  left:41%;
+  width: 100px;
+}
+    /*Hotel List*/
+    .accommodation-list{
+      margin-top:18%;
+    }
+    .accommodation-list-item{
+      margin-left: 4%;
+      width: 80%;
+      height: 200px;
+    }
+    .text-block{
+      padding-left:100px;
+    }
+/*Image Slider*/
+.index-swiper .swiper-container {
+  width:100%;
+  height: 100%;
+  }
+.index-swiper .swiper-slide img {
+  width: 100%;
+  height: 300px;
+  }
+.description {
+  width:100%;
+  height: 100%;
+}
+.accommodation_type{
+  margin-top:-2%;
+}
+.accommodation-general img{
+  width:30px;
+  height:30px;
+}
+.accommodation-filtered{
+  top:5%;
+  left:0;
+}
+.meals{
+  top:95%;
+  right:0;
+    img{
+    width:40px;
+    height:30px;
+  }
+}
+.close {
+  top: 15px;
+  right: 50px;
+}
+}
+/*Tablets max width 1024px*/
+@media only screen and (max-width: 1024px){
+    /*Welcome page*/
+    .logo img{
+      top:35%;
+      left:50%;
+    }
+    .display-text{
+      margin-top:25%;
+    }
+    .start-button{
+      width:40%;
+      top:80%;
+      left:30%;  
+       margin: 0;   
+      text-align: center;
+    }
+/*abode page*/    
+.logo-home img{
+      margin: 0;
+      top:10%;
+      left: 50%;
+      width:180px;
+    }
+.filtering-section{
+  margin-top:10%;
+}
+/*Search bar*/
+#search-location{
+  margin-left:30%;
+  font-size: 16px;
+}
+.period-of-stay{
+  margin-left:38%;
+}
+.checkout{
+  margin-left:10%;
+}
+.checkin, .checkout{
+ font-size:16px;
+}
+/*guests and price*/
+.container{
+  margin-left:31%;
+}
+.col {
+  font-size: 16px;
+}
+.accommo-type{
+  margin-left: 34%;
+  font-size: 16px;
+}
+.submitButton{
+  top: 70%;
+  left:46%;
+  width: 100px;
+}
+    /*Hotel List*/
+    .accommodation-list{
+      margin-top:10%;
+    }
+    .accommodation-list-item{
+      margin-left: 18%; 
+      width: 60%;
+      height: 400px;
+    }
+    .text-block{
+      padding-left:350px;
+    }
+/*Image Slider*/
+.index-swiper .swiper-container {
+  width:70%;
+  height: 60%;
+  }
+.index-swiper .swiper-slide img {
+  width: 100%;
+  height: 250px;
+  }
+.description {
+  width:70%;
+  height: 250px;
+}
+.accommodation_type{
+  margin-top:-2%;
+  font-size: 15px;
+}
+.accommodation-name{
+  font-size: 20px;
+}
+.accommodation-general img{
+  width:30px;
+  height:30px;
+}
+.accommodation-filtered{
+  left:50%;
+}
+.meals{
+    top:95%;
+    right:20%;
+      img{
+        width:40px;
+        height:30px;
+      }
+}
+.close {
+  top: 15px;
+  right: 50px;
+}
+}
+/*devices larger than 1024px width*/
+@media only screen and (min-width: 1024px){
+  /*guests and price*/
+.container{
+  margin-left:40.5%;
+}
+.col {
+  font-size: 16px;
+}
+.accommo-type{
+  margin-left: 42%;
+  font-size: 16px;
+}
+.submitButton{
+  top: 50%;
+  left:48%;
+  width: 100px;
+}
+}

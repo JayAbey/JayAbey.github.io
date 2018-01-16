@@ -1,0 +1,36 @@
+@mixin flex-flow($flow){
+  -webkit-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+//variables
+$primary-font: 'Mallanna', sans-serif;
+$primary-font-color: #a4a4a4;
+
+/*Hotel list*/
+.accommodation-list{
+  margin-top:5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+@include flex-flow(row wrap);
+}
+.accommodation-list-item{
+   margin-left: 15%;
+   width: 500px;
+   height: 300px;
+   padding: 40px;
+   border-radius: 3em;
+}
+.text-block{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+@include flex-flow(row wrap);
+  padding-left:250px;
+  font-family: $primary-font;
+  color:$primary-font-color;
+}
+.title{
+  padding-right:150px;
+}
