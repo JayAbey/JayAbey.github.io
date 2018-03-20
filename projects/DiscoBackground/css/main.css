@@ -1,0 +1,120 @@
+.relative {
+  position: relative;
+}
+
+.outer {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
+.window {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transform: translate3d(0, 0, 0);
+}
+
+.window > .purple-pane.pane {
+  -webkit-animation-name: pane;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: pane;
+  -moz-animation-duration: 14s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: pane;
+  animation-duration: 14s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.window > .pink-pane.pane {
+  -webkit-animation-name: pane;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: pane;
+  -moz-animation-duration: 10s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: pane;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.window > .purple-pane.duplicate-pane {
+  -webkit-animation-name: duplicate;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: duplicate;
+  -moz-animation-duration: 14s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: duplicate;
+  animation-duration: 14s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.window > .pink-pane.duplicate-pane {
+  -webkit-animation-name: duplicate;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: duplicate;
+  -moz-animation-duration: 10s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: duplicate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.pane {
+  position: absolute;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.window div {
+  display: inline-block;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes pane {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@-moz-keyframes pane {
+  0% {
+    -moz-transform: translateX(0%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@keyframes pane {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
