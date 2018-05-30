@@ -1,0 +1,80 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: May 25, 2018 6:59 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.38
+WORDPRESS:	4.9.6
+PHP INFO:	5.5.37 | SAPI: apache2handler
+SERVER:		Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.37 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 33.5MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+FILTERED: [] 
+RESPONSE: Ran from C:/xampp/mysql/bin/mysqldump.exe 
+TABLES: total:41 | filtered:0 | create:41 
+SQL CREATED: 20180525_musicmovesme_efc17e8e3c36a89a7521180525065948_database.sql 
+SQL FILE SIZE: 285.67KB (292525) 
+SQL FILE TIME: 2018-05-25 06:59:58 
+SQL RUNTIME: 0.52 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/xampp/htdocs/musicmovesme 
+ARCHIVE FILE: 20180525_musicmovesme_efc17e8e3c36a89a7521180525065948_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	82.02MB 
+STATS:	Dirs 351 | Files 3,562 
+SQL ADDED: 20180525_musicmovesme_efc17e8e3c36a89a7521180525065948_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 3913
+    [filename] => C:\xampp\htdocs\musicmovesme\wp-snapshots\tmp\20180525_musicmovesme_efc17e8e3c36a89a7521180525065948_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 48.79MB 
+ARCHIVE RUNTIME: 6.54 sec. 
+MEMORY STACK: 34.75MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [C:/xampp/htdocs/musicmovesme/wp-snapshots/tmp/20180525_musicmovesme_efc17e8e3c36a89a7521180525065948_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 285.67KB 
+Installer File: 445.89KB 
+Archive File: 48.79MB  
+
+********************************************************************************
+RECORD ID:[3]
+TOTAL PROCESS RUNTIME: 12.04 sec.
+PEAK PHP MEMORY USED: 37.25MB
+DONE PROCESSING => 20180525_musicmovesme May 25, 2018 7:00 am
+ 
