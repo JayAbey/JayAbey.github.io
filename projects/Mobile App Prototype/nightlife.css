@@ -1,0 +1,176 @@
+/********Stylesheet.css ********/
+/******
+toolbar function
+******/
+
+#mainbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#info {
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+}
+
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5vh;
+    width: 100vw;
+    background-color: black;
+}
+
+#back-buttom {
+    margin-left: 5vw;
+    position: absolute;
+}
+
+#back-buttom a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+input[type=text] {
+    position: fixed;
+    top: 0.5vh;
+    margin-left: 15vw;
+    width: 65vw;
+}
+
+details {
+    margin-right: 30vw;
+    position: absolute;
+    right: -30vw;
+}
+
+nav {
+    height: 100vh;
+    width: 40vw;
+    background-color: black;
+}
+
+nav a {
+    font-size: 24px;
+    height: 14vh;
+    line-height: 14vh;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+summary {
+    font-size: 22px;
+    margin-right: 5vw;
+    text-align: right;
+    cursor: pointer;
+    color: #FFF;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/*****NightLife.css *****/
+.night-life {
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+
+.map img{
+    width: 100vw;
+    height: auto;
+}
+
+.location-item-1 img{
+    width: 60vw;
+    margin-top: 1vh;
+    margin-left: 20vw;
+}
+
+.location-item-2 img{
+    width: 60vw;
+    margin-top: 1vh;
+    margin-left: 20vw;
+}
+
+.location-item-3 img{
+    width: 60vw;
+    margin-top: 1vh;
+    margin-left: 20vw;
+}
+
+.location-item-1{
+padding: none;
+color: white;
+}
+
+.location-item-1:hover{
+    width:60vw;
+    transform:scale(1.1);
+}
+
+.location-item-2 {
+padding: none;
+    margin:auto;
+}
+
+.location-item-2:hover{
+    width:60vw;
+    transform:scale(1.1);
+}
+
+.location-item-3 {
+padding: none;
+}
+
+.location-item-3:hover{
+    width:60vw;
+    transform:scale(1.1);
+}
+
+.location-name{
+    color: white;
+    font-size: 30px;
+    width:60vw;
+    text-align: center;
+}
+
+.location-name:hover{
+    transform: scale(1.1);
+}
+
+.rating{
+    align-content: center;
+}
+
+.rating:hover{
+    transform: scale(1.1);
+}
+
+.rating img{
+    width:60vw;
+    margin-left: 20vw;
+}
+
+.pricing{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.pricing:hover{
+    transform: scale(1.1);
+}

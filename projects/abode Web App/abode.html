@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="home-background">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>abode - Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Image Slider - Swiper style-->
+    <link rel="stylesheet" href="js/plugins/Swiper-3.4.2/dist/css/swiper.min.css">
+
+    <!--AOS jquery plugin-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <!--Select2 jquery plugin-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+    <!--Date picker jquery plugin-->
+    <link href="js/plugins/datepicker/dist/datepicker.min.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Mallanna" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="logo-home">
+        <a href="abode.html"><img src="images/logo.png" alt="webApp logo"></a>
+    </div>
+
+    <form class="filtering-section" action="#">
+        <div id="search-location">
+            <select id="search" class="locations"></select>
+        </div>
+
+        <section class="period-of-stay">
+            <div id="check-in" class="checkin">Check-in</div>
+
+            <div id="check-out" class="checkout">Check-out</div>
+        </section>
+
+        <section class="container">
+            <div class="col">
+                <select id="guests-number" class="guests-number"></select>
+            </div>
+
+            <div class="col">
+                <select id="price-range" class="price-range"></select>
+            </div>
+        </section>
+
+        <div class="accommo-type">
+            <select id="accommodation-type" class="accommodation-type"></select>
+        </div>
+
+        <input class="submitButton" type="submit" value="Submit">
+    </form>
+
+    <section class="accommodation-list"></section>
+
+    <div id="modal" class="modal">
+        <div class="index-swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div id="description" class="description"></div>
+
+    </div>
+
+    <!--JQUERY Plugins-->
+    <script src="js/plugins/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/plugins/datepicker/dist/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <!-- -->
+    
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

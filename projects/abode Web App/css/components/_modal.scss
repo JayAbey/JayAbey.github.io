@@ -1,0 +1,110 @@
+@mixin flex-flow($flow){
+  -webkit-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+//variables
+$primary-font: 'Mallanna', sans-serif;
+$primary-font-color: #a4a4a4;
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 5%;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  text-align: center;
+}
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 1000px;
+  height: 550px;
+  max-width: 100%;
+  }
+    /*Item description section*/
+.description {
+  margin: auto;
+  display: block;
+  background-color:white;
+  width: 1000px;
+  height: 400px;
+  color: $primary-font-color;
+  font-family: $primary-font;
+  font-size: 20px;
+  max-width: 100%;
+}
+.accommodation-general, .accommodation-filtered{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+@include flex-flow(row wrap);
+}
+.accommodation-name{
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+.accommodation_type{
+  position:absolute;
+  margin-top:-2%;
+  text-align: left;  
+}
+.accommodation-general div{
+  padding: 35.5px;
+}
+.accommodation-filtered{
+  position: absolute;
+  top: 80%;
+  left:25%;
+    div{
+      padding: 55px;
+      }
+}
+.meals{
+    position: absolute;
+    top:95%;
+    right: 25%;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s; 
+}
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+
+  to {
+    transform: scale(1); } }
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  color: $primary-font-color;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s; 
+}
+.close:hover,
+.close:focus {
+  color: $primary-font-color;
+  text-decoration: none;
+  cursor: pointer; 
+}
+/*Image Slider*/
+.index-swiper .swiper-container {
+  width: 1000px;
+  height: 550px;
+  }
+.index-swiper .swiper-slide img {
+  width: 1000px;
+  height: 550px;
+  }

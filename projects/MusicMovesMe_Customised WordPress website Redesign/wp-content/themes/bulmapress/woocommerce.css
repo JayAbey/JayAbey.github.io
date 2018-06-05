@@ -1,0 +1,165 @@
+/**********Shop Page**********/
+.site .site-content .content-area .site-main .woocommerce-breadcrumb{
+    display: none;
+}
+.site .site-content .content-area .site-main .woocommerce-products-header h1{
+    text-indent:-9999px;
+}
+.site .site-content .content-area .site-main .woocommerce-products-header h1:before{
+    text-indent:0;
+    content: "Charity Products";
+    float:left;
+    margin-left: 40%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3vw;
+}
+.site .site-content .content-area .site-main p{
+    margin-top: 2%;
+    margin-left: 2%;
+    color: #00897B;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.site .site-content .content-area .site-main .woocommerce-ordering select{
+    margin-top: 20%;
+    padding: 10px 10px 10px 10px;
+    color: #00897B;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.site .site-content .content-area .site-main .products{
+    margin-left: 15%;
+    padding: 100px 100px 100px 100px;
+}
+.site .site-content .content-area .site-main .products .product a img{
+    width: 12vw;
+    height: 20vh;
+}
+.site .site-content .content-area .site-main .products .product .button{
+    color: #00897B;
+    outline: none;
+    background: none;
+    border: 2px solid #00897B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+    text-shadow: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 15px 15px 35px 15px;
+}
+.site .site-content .content-area .site-main .products .product .button:hover{
+    color: white;
+    background: #00897B;
+}
+.site .site-content .content-area .site-main .products .product h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #00897B;
+    font-size: 1vw;
+}
+.site .site-content .content-area .site-main .products .product .woocommerce-LoopProduct-link .price .amount{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #00897B;
+    font-size: 0.8vw;
+}
+
+
+/**********Individual Product Page**********/
+.site .site-content .content-area .site-main .product .summary{
+    color: #00897B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+}
+.site .site-content .content-area .site-main .product .summary h1{
+    font-size: 1.5vw;
+}
+.site .site-content .content-area .site-main .product .summary .product_meta{
+    display: none;
+}
+.site .site-content .content-area .site-main .product .summary .cart{
+    margin-top: 5%;
+}
+.site .site-content .content-area .site-main .product .summary .cart button{
+    color: #00897B;
+    outline: none;
+    background: none;
+    border: 2px solid #00897B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+    text-shadow: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 15px 15px 35px 15px;
+}
+.site .site-content .content-area .site-main .product .summary .cart button:hover{
+    color: white;
+    background: #00897B;
+}
+.site .site-content .content-area .site-main .product .woocommerce-tabs{
+    color: #00897B;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.site .site-content .content-area .site-main .product .woocommerce-tabs .woocommerce-Tabs-panel .woocommerce-Reviews #comments h2{
+    display: none;
+}
+.site .site-content .content-area .site-main .product .woocommerce-tabs .woocommerce-Tabs-panel .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-rating .stars span a{
+    color: #00897B;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+    color: #00897B;
+    outline: none;
+    background: none;
+    border: 2px solid #00897B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+    text-shadow: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 10px 10px 10px 10px;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button:hover{
+    color: white;
+    background: #00897B;
+}
+.site .site-content .content-area .site-main .product .products{
+    margin-left: 5%;
+}
+.site .site-content .content-area .site-main .product .related h2{
+    color: #00897B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+}
+
+
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+    .site .site-content .content-area .site-main .products .product {
+padding: 35px 35px 35px 35px;
+    }
+    .site .site-content .content-area .site-main .products .product a img {
+        max-width: 100vw;
+        height: 20vh;
+    }
+    .site .site-content .content-area .site-main .products .product .button {
+        font-size: 3vw;
+    }
+    .site .site-content .content-area .site-main .products .product h2 {
+        font-size: 4vw;
+    }
+    .site .site-content .content-area .site-main .products .product .woocommerce-LoopProduct-link .price .amount {
+        font-size: 3vw;
+    }
+
+    .site .site-content .content-area .site-main .product .summary{
+        font-size: 3vw;
+    }
+    .site .site-content .content-area .site-main .product .summary h1{
+        font-size: 4vw;
+    }
+    .site .site-content .content-area .site-main .product .summary .cart button{
+        font-size: 3vw;
+    }
+    .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+        font-size: 3vw;
+    }
+    .site .site-content .content-area .site-main .product .related h2{
+        font-size: 3vw;
+    }
+}
