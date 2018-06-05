@@ -1,7 +1,7 @@
 // variables
 $base-font: 'Ubuntu', sans-serif;
 $body-font: 'Droid Sans', sans-serif;
-$primary-color: black;
+$primary-color: #333;
 $secondary-color:white;
 
 
@@ -16,29 +16,24 @@ $secondary-color:white;
 
 /*Page tiltle*/
 .beverages-page-title{
-  position: absolute;
-  top:6%;
-  margin-left: 22%;
+  text-align: center;
   color: $secondary-color;
   font-family: $body-font;
-  font-size: 30px;
-  z-index: 2;
+  font-size: 1.3vw;
 }
 /*3 menus*/
 *{
   box-sizing:border-box;
 }
 .container-B{
-  position: absolute;
-  top:20%;
-  left:7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
+  justify-content: center;
     img{
-      width:350px;
-      height:490px;
+      width:30vw;
+      height:50vh;
       @include border-radius(10px);
       cursor: pointer;
     }
@@ -50,37 +45,30 @@ $secondary-color:white;
   padding: 20px;
 }
 .text-block-B-1{
-  position:absolute;
-  bottom:7%;
-  left:1.7%;
-  width:30%;
-  height:7%;
+  margin-top: -28%;
+  width:100%;
+  height:25%;
   background-color: $primary-color;
   opacity: 0.6;
 }
 .text-block-B-2{
-  position:absolute;
-  bottom:7%;
-  left:35%;
-  width:30%;
-  height:7%;
+  margin-top: -28%;
+  width:100%;
+  height:25%;
   background-color: $primary-color;
   opacity: 0.6;
 }
 .text-block-B-3{
-  position:absolute;
-  bottom:7%;
-  left:68.4%;
-  width:30%;
-  height:7%;
+  margin-top: -28%;
+  width:100%;
+  height:25%;
   background-color: $primary-color;
   opacity: 0.6;
 }
 p.text-B{
-  padding:5px;
-  margin:0px;
+  padding:35px 5px 5px 5px;
   color: $secondary-color;
   font-family: $body-font;
-  font-size: 25px;
+  font-size: 1.2vw;
   text-align: center;
 }

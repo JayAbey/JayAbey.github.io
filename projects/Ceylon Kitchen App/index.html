@@ -26,6 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!--fontawsome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/1ad8e69b61.js"></script>
 
     <script src="js/main.js"></script>
@@ -79,47 +80,35 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="todays_special.html">
-                    <img src="img/todays_special.jpg" alt="today's special">
+                    <a href="todays_special.html"><img src="img/todays_special.jpg" alt="today's special"> </a>
                     <div class="index-label"><a href="todays_special.html">Today's Special!</a></div>
-                </a>
-            </div>
+                    <div id="viewMenu" class="view-menu"><a href="view_menu.html">View menu</a></div>
+                </div>
 
-            <div class="swiper-slide">
-                <a href="special_offers.html">
-                    <img src="img/special_offer.jpg" alt="special offers">
+                <div class="swiper-slide">
+                    <a href="special_offers.html"><img src="img/special_offer.jpg" alt="special offers"></a>
                     <div class="index-label"><a href="special_offers.html">Lunch Special Offer!</a></div>
-            </a>
+                    <div id="viewMenu" class="view-menu"><a href="view_menu.html">View menu</a></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
-    <div class="swiper-pagination"></div>
-    </div>
-    </div>
-
-    <div id="viewMenu" class="view-menu"><a href="view_menu.html">View menu</a></div>
 
     <div id="post-feedback" class="feedback">
-        <p id="title" class="title">How was it?!</p>
+        <p id="title" class="title">How was your experience in Ceylon Kitchen?!</p>
 
         <section class="smileys">
             <div id="col-smilleys" class="col-smilleys">
-                <img id="excellent" src="img/excellent-smiley.png" alt="excellent smiley icon">
-                <p id="excellentP">excellent</p>
-            </div>
-            <div class="col-smilleys">
-                <img id="verygood" src="img/verygood-smiley.png" alt="verygood smiley icon">
-                <p id="verygoodP">very good</p>
-            </div>
-            <div class="col-smilleys">
-                <img id="good" src="img/good-smiley.png" alt="good smiley icon">
+                <i id="good" class="far fa-smile fa-7x"></i>
                 <p id="goodP">good</p>
             </div>
-            <div class="col-smilleys">
-                <img id="average" src="img/average-smiley.png" alt="average smiley icon">
+            <div id="col-smilleys" class="col-smilleys">
+                <i id="average" class="far fa-meh fa-7x"></i>
                 <p id="averageP">average</p>
             </div>
-            <div class="col-smilleys">
-                <img id="poor" src="img/poor-smiley.png" alt="poor smiley icon">
+            <div id="col-smilleys" class="col-smilleys">
+                <i id="poor" class="far fa-frown fa-7x"></i>
                 <p id="poorP">poor</p>
             </div>
         </section>
@@ -129,7 +118,8 @@
     <div id="posted-feedback" class="posted-feedback">
         <table>
             <tr>
-                <td><img class="feedback-smiley" id="img02"></td>
+                <!--<td><img class="feedback-smiley" id="img02"></td>-->
+                <td><i class="feedback-smiley" id="img02"></i></td>
                 <td id="feedback-message"></td>
                 <div id="commentBox"><input class="comment" id="comment" type="text" name="comment" placeholder="Tell us what you think"></div>
                 <div id="post" class="post" onclick="showMessage()" value="showMessage">Post</div>
@@ -146,7 +136,6 @@
             autoplay: 2200,
             autoplayDisableOnInteraction: false
         });
-
     </script>
 </body>
 

@@ -1,31 +1,25 @@
 // variables
 $base-font: 'Ubuntu', sans-serif;
 $body-font: 'Droid Sans', sans-serif;
-$primary-color: black;
+$primary-color:#333;
 $secondary-color:white;
 
 
 .feedback {
-position : absolute;
+margin-top:-1.3%;
 background-color : $primary-color;
-width : 100%;
-height : 268px;
-z-index : 2;
+width : 100vw;
 }
 .smileys {
-position : absolute;
-top : 30%;
-left : 32%;
 display : flex;
+justify-content: center;
 font-family : $body-font;
-font-size : 15px;
+font-size : 0.7vw;
 }
 .col-smilleys {
     padding : 10px;
     color : $secondary-color;
-    img {
-        width : 80px;
-        height : 80px;
+    i {
         cursor : pointer;
         }
     p {
@@ -34,38 +28,34 @@ font-size : 15px;
         }
 }
 .title {
-margin-left : 45%;
+padding: 25px 10px 10px 10px;
+text-align : center;
 color : $secondary-color;
 font-family : $body-font;
-font-size : 25px;
+font-size : 1.2vw;
 }
 .comment {
-position : absolute;
-top : 73%;
 padding : 10px 10px 10px 35px;
-width : 250px;
+width : 25vw;
 border-radius : 10px;
-margin-left : 37%;
-margin-top : 0;
+margin-left : 38%;
 font-family : $base-font;
 }
 .comment:focus {
-height : 71px;
+height : 7vh;
 background-color : $secondary-color;
 }
 .post {
-position : absolute;
 display : flex;
 flex-direction : column;
 justify-content : center;
 align-items : center;
-z-index : 4;
-top : 73%;
-margin-left : 78%;
-width : 15%;
+margin-top : 2%;
+margin-left : 46.5%;
+width : 150px;
 padding : 10px 10px 10px 10px;
 border-radius : 10px;
-font-size : 20px;
+font-size : 1vw;
 text-decoration : none;
 background : $primary-color;
 opacity : 0.699999988079071044921875;
@@ -77,15 +67,16 @@ font-family : $base-font;
 }
 .posted-feedback {
 display : none;
-position : absolute;
 background-color : $primary-color;
-left : 23%;
-height : 268px;
-z-index : 3;
+height : 30vh;
+}
+.posted-feedback table{
+margin-left : 39%;
 }
 #feedback-message {
+padding-top: 20px;
 text-align : center;
 color : $secondary-color;
-font-size : 30px;
+font-size : 1.3vw;
 font-family : $body-font;
 }

@@ -1,23 +1,20 @@
 // variables
 $base-font: 'Ubuntu', sans-serif;
 $body-font: 'Droid Sans', sans-serif;
-$primary-color: black;
+$primary-color: #333;
 $secondary-color:white;
 
 
 .view-menu {
-position : absolute;
 display : flex;
 flex-direction : column;
 justify-content : center;
 align-items : center;
-z-index : 4;
-top : 56%;
-margin-left : 77%;
-width : 18%;
-padding : 10px 10px 10px 10px;
+margin-top: -3%;
+margin-left:71%;
+width : 12%;
 border-radius : 10px;
-font-size : 20px;
+font-size : 1vw;
 text-decoration : none;
 border-color : $secondary-color;
 border-style : ridge;
@@ -25,6 +22,7 @@ font-weight : bold;
 background : $primary-color;
 opacity : 0.60000002384185791015625;
     a {
+        padding : 10px 10px 10px 10px;
         text-decoration : none;
         color : $secondary-color;
         transition : background-color 0.3s;

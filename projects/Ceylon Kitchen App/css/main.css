@@ -156,129 +156,113 @@ template {
   display: none; }
 
 .page-title {
-  position: absolute;
-  top: 7%;
+  margin-top: 7%;
   margin-left: 40%;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px;
-  z-index: 2; }
+  font-size: 1.2vw; }
 
 /*Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR"*/
 .index-swiper .swiper-container {
-  width: 100%;
-  height: 500px; }
+  width: 100vw;
+  height: 70vh; }
 .index-swiper .swiper-slide img {
-  width: 100%;
-  height: 550px;
+  width: 100vw;
+  height: 70vh;
   cursor: pointer; }
 
-.index-label {
-  position: absolute;
-  z-index: 4;
+.index-swiper .swiper-container .swiper-wrapper .swiper-slide .index-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: gold;
-  font-size: 60px;
-  top: 50%;
-  margin-left: 55%;
-  width: 45%;
-  height: 30%;
-  padding: 10px 10px 10px 10px; }
-  .index-label a {
+  font-size: 3vw;
+  margin-top: -25%;
+  margin-left: 45%;
+  width: 75vw;
+  height: 30vh; }
+  .index-swiper .swiper-container .swiper-wrapper .swiper-slide .index-label a {
+    padding: 30px 30px 30px 30px;
+    background: gold;
     font-family: "Droid Sans", sans-serif;
     color: white;
     text-decoration: none;
     text-align: center; }
 
 .view-menu {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 4;
-  top: 56%;
-  margin-left: 77%;
-  width: 18%;
-  padding: 10px 10px 10px 10px;
+  margin-top: -3%;
+  margin-left: 71%;
+  width: 12%;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1vw;
   text-decoration: none;
   border-color: white;
   border-style: ridge;
   font-weight: bold;
-  background: black;
+  background: #333333;
   opacity: 0.60000002384185791015625; }
   .view-menu a {
+    padding: 10px 10px 10px 10px;
     text-decoration: none;
     color: white;
     transition: background-color 0.3s;
     font-family: "Ubuntu", sans-serif; }
 
 .feedback {
-  position: absolute;
-  background-color: black;
-  width: 100%;
-  height: 268px;
-  z-index: 2; }
+  margin-top: -1.3%;
+  background-color: #333333;
+  width: 100vw; }
 
 .smileys {
-  position: absolute;
-  top: 30%;
-  left: 32%;
   display: flex;
+  justify-content: center;
   font-family: "Droid Sans", sans-serif;
-  font-size: 15px; }
+  font-size: 0.7vw; }
 
 .col-smilleys {
   padding: 10px;
   color: white; }
-  .col-smilleys img {
-    width: 80px;
-    height: 80px;
+  .col-smilleys i {
     cursor: pointer; }
   .col-smilleys p {
     text-align: center;
     cursor: pointer; }
 
 .title {
-  margin-left: 45%;
+  padding: 25px 10px 10px 10px;
+  text-align: center;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px; }
+  font-size: 1.2vw; }
 
 .comment {
-  position: absolute;
-  top: 73%;
   padding: 10px 10px 10px 35px;
-  width: 250px;
+  width: 25vw;
   border-radius: 10px;
-  margin-left: 37%;
-  margin-top: 0;
+  margin-left: 38%;
   font-family: "Ubuntu", sans-serif; }
 
 .comment:focus {
-  height: 71px;
+  height: 7vh;
   background-color: white; }
 
 .post {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 4;
-  top: 73%;
-  margin-left: 78%;
-  width: 15%;
+  margin-top: 2%;
+  margin-left: 46.5%;
+  width: 150px;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1vw;
   text-decoration: none;
-  background: black;
+  background: #333333;
   opacity: 0.699999988079071044921875;
   border-color: white;
   border-style: ridge;
@@ -288,47 +272,45 @@ template {
 
 .posted-feedback {
   display: none;
-  position: absolute;
-  background-color: black;
-  left: 23%;
-  height: 268px;
-  z-index: 3; }
+  background-color: #333333;
+  height: 30vh; }
+
+.posted-feedback table {
+  margin-left: 39%; }
 
 #feedback-message {
+  padding-top: 20px;
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 1.3vw;
   font-family: "Droid Sans", sans-serif; }
 
 /*Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR"*/
 .menu-swiper .swiper-container {
-  position: absolute;
-  top: 60%;
-  width: 100%;
-  height: 307px; }
+  margin-top: 20%;
+  width: 100vw;
+  height: 50vh; }
 .menu-swiper .swiper-slide img {
-  width: 100%;
-  height: 307px;
+  width: 100vw;
+  height: 50vh;
   cursor: pointer; }
 
 .modal {
+  margin-left: 10vw;
+  margin-top: 3vh;
   display: none;
   position: fixed;
   z-index: 2;
-  left: 5%;
-  top: 5%;
-  right: 5%;
-  bottom: 5%;
-  background-color: black;
+  background-color: #333;
   background-color: rgba(0, 0, 0, 0.9);
   text-align: center; }
 
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
-  height: 550px;
-  max-width: 100%; }
+  width: 80vw;
+  height: 50vh;
+  max-width: 100vw; }
 
 .modal-content, #caption {
   animation-name: zoom;
@@ -337,14 +319,14 @@ template {
 @keyframes zoom {
   from {
     transform: scale(0); }
+
   to {
     transform: scale(1); } }
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
+  position: fixed;
+  margin-left: 37%;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: bold;
   transition: 0.3s; }
 
@@ -355,14 +337,12 @@ template {
 
 .info-container {
   background-color: white;
-  top: 65%;
-  width: 100%;
-  height: 80px;
-  left: 0;
-  position: absolute;
+  width: 80vw;
+  height: 8vh;
   display: flex;
+  margin: auto;
   font-family: "Droid Sans", sans-serif;
-  font-size: 15px; }
+  font-size: 0.7vw; }
 
 .col {
   width: 15%;
@@ -372,81 +352,70 @@ template {
     padding-left: 10px; }
 
 .info-icons {
-  width: 50px;
-  height: 50px; }
+  width: 2.4vw;
+  height: 3.6vh; }
 
 .item-description {
-  position: absolute;
-  background-color: black;
-  top: 75%;
-  width: 100%;
-  height: 192px;
+  background-color: #333333;
+  width: 80vw;
+  height: 35vh;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 20px; }
+  font-size: 1vw; }
 
 .ingredients-title {
-  font-size: 20px;
-  margin-left: 20%; }
+  font-size: 1vw; }
 
 .ingredients-items {
-  font-size: 20px;
-  margin-left: 20%; }
-
-.description p {
-  margin-left: 20%; }
+  font-size: 1vw; }
 
 /*Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR"*/
 .todays-special-swiper .swiper-container {
-  width: 100%;
-  height: 500px; }
+  width: 100vw;
+  height: 70vh; }
 .todays-special-swiper .swiper-slide img {
-  width: 100%;
-  height: 500px; }
+  width: 100vw;
+  height: 70vh; }
 
 header {
-  position: fixed;
-  width: 100%;
-  z-index: 2; }
+  width: 100vw; }
 
 .main-nav {
   list-style: none;
-  background-color: black;
+  background-color: #333333;
   padding-bottom: 1%; }
   .main-nav div {
     display: inline-block;
     font-family: "Ubuntu", sans-serif;
-    width: 120px; }
+    width: 12.5vw; }
 
 .main-nav--open-btn {
-  position: absolute;
-  top: 20px;
-  left: 25px;
+  margin-top: 1vw;
+  margin-left: 1.2vw;
   color: white;
-  font-size: 24px;
+  font-size: 1.2vw;
   cursor: pointer; }
 
 .search {
   background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
   padding: 10px 10px 10px 35px;
-  width: 150px;
+  width: 10vw;
   border-radius: 10px;
-  margin-left: 700%;
+  margin-left: 380%;
   margin-top: 10%;
   font-family: "Ubuntu", sans-serif; }
 
 .search:focus {
-  width: 250px;
-  background-color: black; }
+  width: 15vw;
+  background-color: #333333; }
 
 .sidenav {
   position: absolute;
-  top: 0;
-  left: -300px;
-  width: 250px;
-  height: 100%;
-  max-height: 100%;
-  background: black;
+  margin-top: 0;
+  margin-left: -300px;
+  width: 15vw;
+  height: 100vh;
+  background: #333333;
   opacity: 0.9;
   border-color: white;
   border-style: ridge;
@@ -464,23 +433,23 @@ header {
 
 .sidenav--close-btn {
   position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 25px; }
+  margin-top: 10%;
+  margin-left: 85%;
+  font-size: 1.5vw; }
 
 .sidenav--menu {
-  margin-top: 120px;
-  font-size: 20px;
+  margin-top: 4vh;
+  font-size: 1vw;
   line-height: 1.5em;
   font-family: "Ubuntu", sans-serif; }
   .sidenav--menu li {
-    color: black;
+    color: #333333;
     opacity: 0.7; }
 
 .sidenav--overlay {
   position: fixed;
-  top: 0;
-  left: 0;
+  margin-top: 0;
+  margin-left: 0;
   height: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7); }
@@ -490,37 +459,37 @@ header {
   text-decoration: none;
   color: white;
   margin-left: 15%;
-  font-size: 15px; }
+  font-size: 0.7vw; }
   .copyright img {
-    width: 30px;
-    height: 30px; }
+    width: 1vw;
+    height: 1.5vh; }
 
 .clientInfo {
-  padding-top: 120px;
+  padding-top: 200px;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   color: white;
   margin-left: 15%;
-  font-size: 12px; }
+  font-size: 0.7vw; }
 
 .devInfo {
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   color: white;
   margin-left: 15%;
-  font-size: 12px; }
+  font-size: 0.7vw; }
 
 .feedback-btn {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 0.7vw;
   text-decoration: none;
   margin-left: 6%;
   padding-bottom: 1%;
   text-align: center;
   padding-top: 1%;
-  background: black;
+  background: #333333;
   opacity: 0.7;
   border-color: white;
   border-style: ridge; }
@@ -549,12 +518,11 @@ body {
   background-size: cover; }
 
 .back {
-  position: absolute;
-  top: 10%;
-  left: 2%; }
+  margin-top: 5%;
+  margin-left: 2%; }
   .back a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.2vw;
     font-family: "Ubuntu", sans-serif;
     color: white; }
 
@@ -563,85 +531,75 @@ body {
   box-sizing: border-box; }
 
 .container-s {
-  position: absolute;
-  top: 13%;
-  left: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  justify-content: center; }
   .container-s img {
-    width: 400px;
-    height: 300px;
+    width: 25vw;
+    height: 30vh;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     cursor: pointer; }
 
 .col-s {
-  padding: 13px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 33px; }
+
+.col-s div {
+  padding: 20px; }
 
 .text-block1-s {
-  position: absolute;
-  bottom: 55%;
-  left: 1%;
-  width: 30.5%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 35%;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block2-s {
-  position: absolute;
-  bottom: 55%;
-  left: 31.5%;
-  width: 31%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 35%;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block3-s {
-  position: absolute;
-  bottom: 55%;
-  left: 62.6%;
-  width: 30.5%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 35%;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block4-s {
-  position: absolute;
-  bottom: 5%;
-  left: 1%;
-  width: 30.5%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 35%;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block5-s {
-  position: absolute;
-  bottom: 5%;
-  left: 31.5%;
-  width: 31%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 35%;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block6-s {
-  position: absolute;
-  bottom: 5%;
-  left: 62.6%;
-  width: 30.5%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 35%;
+  background-color: #333333;
   opacity: 0.6; }
 
 p.text-s {
-  padding: 5px;
-  margin: 0px;
+  padding: 5px 5px 5px 5px;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px;
+  font-size: 1.2vw;
   text-align: center; }
 
 /*3 menus*/
@@ -675,7 +633,7 @@ p.text-s {
   left: 1.7%;
   width: 30%;
   height: 10%;
-  background-color: black;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block2 {
@@ -684,7 +642,7 @@ p.text-s {
   left: 35%;
   width: 30%;
   height: 10%;
-  background-color: black;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block3 {
@@ -693,7 +651,7 @@ p.text-s {
   left: 68.4%;
   width: 30%;
   height: 10%;
-  background-color: black;
+  background-color: #333333;
   opacity: 0.6; }
 
 p.text {
@@ -726,7 +684,7 @@ p.text {
   left: 0;
   width: 49.7%;
   height: 10%;
-  background-color: black;
+  background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 .text-block2-l {
@@ -735,7 +693,7 @@ p.text {
   left: 50.2%;
   width: 49.8%;
   height: 10%;
-  background-color: black;
+  background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 p.text-l {
@@ -760,7 +718,7 @@ p.text-l {
   border-radius: 10px;
   font-size: 50px;
   text-decoration: none;
-  background: black;
+  background: #333333;
   opacity: 0.699999988079071044921875;
   border-color: white;
   border-style: ridge;
@@ -773,23 +731,17 @@ p.text-l {
 
 /*Page tiltle-Starters*/
 .starters-menu-page-title {
-  position: absolute;
-  top: 7%;
-  margin-left: 36%;
+  text-align: center;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px;
-  z-index: 2; }
+  font-size: 1.2vw; }
 
 /*Page tiltle-Mains*/
 .mains-menu-page-title {
-  position: absolute;
-  top: 7%;
-  margin-left: 33%;
+  text-align: center;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px;
-  z-index: 2; }
+  font-size: 1.2vw; }
 
 .special-offers-page-title {
   position: absolute;
@@ -824,7 +776,7 @@ p.text-l {
   left: 1.7%;
   width: 30%;
   height: 7%;
-  background-color: black;
+  background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 .text-block-SO-2 {
@@ -833,7 +785,7 @@ p.text-l {
   left: 35%;
   width: 30%;
   height: 7%;
-  background-color: black;
+  background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 .text-block-SO-3 {
@@ -842,7 +794,7 @@ p.text-l {
   left: 68.4%;
   width: 30%;
   height: 7%;
-  background-color: black;
+  background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 p.text-SO {
@@ -866,7 +818,7 @@ p.text-SO {
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   font-size: 50px;
-  background: black;
+  background: #333333;
   opacity: 0.699999988079071044921875;
   border-color: white;
   border-style: ridge;
@@ -890,7 +842,7 @@ p.text-SO {
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   font-size: 50px;
-  background: black;
+  background: #333333;
   opacity: 0.699999988079071044921875;
   border-color: white;
   border-style: ridge;
@@ -914,7 +866,7 @@ p.text-SO {
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   font-size: 50px;
-  background: black;
+  background: #333333;
   opacity: 0.699999988079071044921875;
   border-color: white;
   border-style: ridge;
@@ -927,29 +879,24 @@ p.text-SO {
 
 /*Page tiltle*/
 .beverages-page-title {
-  position: absolute;
-  top: 6%;
-  margin-left: 22%;
+  text-align: center;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 30px;
-  z-index: 2; }
+  font-size: 1.3vw; }
 
 /*3 menus*/
 * {
   box-sizing: border-box; }
 
 .container-B {
-  position: absolute;
-  top: 20%;
-  left: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
   .container-B img {
-    width: 350px;
-    height: 490px;
+    width: 30vw;
+    height: 50vh;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -961,48 +908,38 @@ p.text-SO {
   padding: 20px; }
 
 .text-block-B-1 {
-  position: absolute;
-  bottom: 7%;
-  left: 1.7%;
-  width: 30%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 25%;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block-B-2 {
-  position: absolute;
-  bottom: 7%;
-  left: 35%;
-  width: 30%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 25%;
+  background-color: #333333;
   opacity: 0.6; }
 
 .text-block-B-3 {
-  position: absolute;
-  bottom: 7%;
-  left: 68.4%;
-  width: 30%;
-  height: 7%;
-  background-color: black;
+  margin-top: -28%;
+  width: 100%;
+  height: 25%;
+  background-color: #333333;
   opacity: 0.6; }
 
 p.text-B {
-  padding: 5px;
-  margin: 0px;
+  padding: 35px 5px 5px 5px;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px;
+  font-size: 1.2vw;
   text-align: center; }
 
 /*Back button*/
 .todays-special-back {
-  position: absolute;
-  top: 10%;
-  left: 2%;
-  z-index: 2; }
+  margin-left: 2%; }
   .todays-special-back a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.2vw;
     font-family: "Ubuntu", sans-serif;
     color: white; }

@@ -1,7 +1,7 @@
 // variables
 $base-font: 'Ubuntu', sans-serif;
 $body-font: 'Droid Sans', sans-serif;
-$primary-color: black;
+$primary-color: #333;
 $secondary-color:white;
 
 
@@ -14,7 +14,7 @@ $secondary-color:white;
 
 .feedback-btn{
   @include border-radius(10px);
-  font-size: 14px;
+  font-size: 0.7vw;
   text-decoration: none;
   margin-left: 6%;
   padding-bottom: 1%;

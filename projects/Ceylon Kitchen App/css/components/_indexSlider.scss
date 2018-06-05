@@ -1,38 +1,36 @@
 // variables
 $base-font: 'Ubuntu', sans-serif;
 $body-font: 'Droid Sans', sans-serif;
-$primary-color: black;
+$primary-color: #333;
 $secondary-color:white;
 
 /*Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR"*/
 .index-swiper {
   .swiper-container {
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: 70vh;
   }
   .swiper-slide{
     img{
-      width: 100%;
-      height: 550px;
+      width: 100vw;
+      height: 70vh;
       cursor:pointer;
     }
   }
 }
-.index-label {
-  position: absolute;
-  z-index: 4;
+.index-swiper .swiper-container .swiper-wrapper .swiper-slide .index-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: gold;
-  font-size: 60px;
-  top: 50%;
-  margin-left: 55%;
-  width: 45%;
-  height:30%;
-  padding: 10px 10px 10px 10px;
+  font-size: 3vw;
+  margin-top: -25%;
+  margin-left: 45%;
+  width: 75vw;
+  height:30vh;
     a{
+      padding: 30px 30px 30px 30px;
+      background: gold;
       font-family: $body-font;
       color: $secondary-color;
       text-decoration: none;

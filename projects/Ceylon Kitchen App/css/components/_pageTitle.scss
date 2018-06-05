@@ -1,16 +1,16 @@
 // variables
 $base-font: 'Ubuntu', sans-serif;
 $body-font: 'Droid Sans', sans-serif;
-$primary-color: black;
+$primary-color: #333;
 $secondary-color:white;
 
 
 .page-title{
-  position: absolute;
-  top:7%;
+  // position: absolute;
+  margin-top:7%;
   margin-left: 40%;
   color: $secondary-color;
   font-family: $body-font;
-  font-size: 25px;
-  z-index: 2;
+  font-size: 1.2vw;
+  // z-index: 2;
 }

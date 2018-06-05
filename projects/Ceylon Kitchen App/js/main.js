@@ -12,7 +12,7 @@ function closeNav() {
 //Feedback - Post button
 function showMessage() {
     document.getElementById('post-feedback').innerHTML = '<br/><br/><br/>We value all your comments. Thank you &amp; have a great day!';
-    document.getElementById('post-feedback').setAttribute('style','background:black; z-index:4;text-align:center; padding:2%; color:white; font-size: 30px; font-family:Droid Sans, sans-serif; ');
+    document.getElementById('post-feedback').setAttribute('style','background:#333;text-align:center; padding:2%; color:white; font-size: 1.3vw; font-family:Droid Sans, sans-serif; ');
 }
 
 //Language Selection - Maori button
@@ -37,23 +37,18 @@ function changeToMaori(a,b,c,d,e) {
     document.getElementById('title').innerHTML = 'pēwhea?!';
     document.getElementById('title').setAttribute('style','margin-left: 46.5%;');
 
-    document.getElementById('excellentP').innerHTML = 'rawe';
-    document.getElementById('verygoodP').innerHTML = 'kāore he painga i [a Mea]';
-    document.getElementById('verygood').setAttribute('style', 'margin-left: 30%;');
     document.getElementById('goodP').innerHTML = 'e hika';
     document.getElementById('averageP').innerHTML = 'taurite';
     document.getElementById('poorP').innerHTML = 'raupōtaranga';
 
-    document.getElementById("excellent").src=a;
-    document.getElementById("verygood").src=b;
-    document.getElementById("good").src=c;
-    document.getElementById("average").src=d;
-    document.getElementById("poor").src=e;
+    document.getElementById("good").innerHTML=c;
+    document.getElementById("average").innerHTML=d;
+    document.getElementById("poor").innerHTML=e;
 
     document.getElementById('commentBox').innerHTML = "<input class='comment' id='comment' type='text' name='tākupu' placeholder='tākupu'>";
     document.getElementById('post').innerHTML = 'tāuru';
 
-    $('.col-smilleys img').click(function (){
+    $('.col-smilleys i').click(function (){
     document.getElementById('feedback-message').innerHTML = "Wheriko! Wē ngākau whakaute tāu whakahoki kōrero.<br/>Ka kite anō au i a koe!";
     });
 }
@@ -86,14 +81,14 @@ $(document).ready(function () {
 
     /*Feedback - Post Smiley*/
     var postedFeedback = document.getElementById('posted-feedback');
-    var smiley = $('.col-smilleys img');
+    var smiley = $('.col-smilleys i');
     var feedbackSmiley = $("#img02");
     var feedbackMessage = document.getElementById("feedback-message");
 
-    $('.col-smilleys img').click(function (){
+    $('.col-smilleys i').click(function (){
         postedFeedback.style.display = "block";
-        var newSrc2 = this.src;
-        feedbackSmiley.attr('src', newSrc2);
+        var newInnerHTML = this.innerHTML;
+        feedbackSmiley.attr('innerHTML', newInnerHTML);
         feedbackMessage.innerHTML = "Brilliant! We appreciate your feedback.<br/>See you soon!";
     });
 

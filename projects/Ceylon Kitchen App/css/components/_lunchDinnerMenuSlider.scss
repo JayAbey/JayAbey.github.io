@@ -1,15 +1,14 @@
 /*Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR"*/
 .menu-swiper {
   .swiper-container {
-    position: absolute;
-    top:60%;
-    width: 100%;
-    height: 307px;
+    margin-top:20%;
+    width: 100vw;
+    height: 50vh;
   }
   .swiper-slide {
     img{
-      width: 100%;
-      height: 307px;
+      width: 100vw;
+      height: 50vh;
       cursor: pointer;
     }
   }

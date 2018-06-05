@@ -1,8 +1,0 @@
-{
-    "short_name":"compliments",
-    "name": "compliments",
-    "icons": [],
-    "start_url": "index.html?launcher=true",
-    "background_color": "#d89073",
-    "display": "standalone"
-}

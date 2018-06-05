@@ -1,14 +1,12 @@
 // variables
 $base-font: 'Ubuntu', sans-serif;
 $body-font: 'Droid Sans', sans-serif;
-$primary-color: black;
+$primary-color: #333;
 $secondary-color:white;
 
 
 header{
-  position:fixed;
-  width:100%;
-  z-index: 2;
+  width:100vw;
 }
 .main-nav{
   list-style: none;
@@ -17,14 +15,13 @@ header{
     div{
       display: inline-block;
       font-family: $base-font;
-      width: 120px;
+      width: 12.5vw;
       }
 }
 .main-nav--open-btn{
-  position: absolute;
-  top: 20px;
-  left:25px;
+  margin-top: 1vw;
+  margin-left:1.2vw;
   color: $secondary-color;
-  font-size: 24px;
+  font-size: 1.2vw;
   cursor: pointer;
 }
