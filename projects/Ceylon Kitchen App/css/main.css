@@ -156,11 +156,10 @@ template {
   display: none; }
 
 .page-title {
-  margin-top: 7%;
-  margin-left: 40%;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 1.2vw; }
+  font-size: 1.2vw;
+  text-align: center; }
 
 /*Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR"*/
 .index-swiper .swiper-container {
@@ -287,7 +286,7 @@ template {
 
 /*Image Slider - copyright to "http://idangero.us/swiper/get-started/#.WcHn5bKg9aR"*/
 .menu-swiper .swiper-container {
-  margin-top: 20%;
+  margin-top: -10%;
   width: 100vw;
   height: 50vh; }
 .menu-swiper .swiper-slide img {
@@ -297,7 +296,7 @@ template {
 
 .modal {
   margin-left: 10vw;
-  margin-top: 3vh;
+  margin-top: -77vh;
   display: none;
   position: fixed;
   z-index: 2;
@@ -415,6 +414,7 @@ header {
   margin-left: -300px;
   width: 15vw;
   height: 100vh;
+  max-height: 100vh;
   background: #333333;
   opacity: 0.9;
   border-color: white;
@@ -607,16 +607,14 @@ p.text-s {
   box-sizing: border-box; }
 
 .container-VM {
-  position: absolute;
-  top: 22%;
-  left: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
   .container-VM img {
-    width: 350px;
-    height: 490px;
+    width: 25vw;
+    height: 50vh;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -628,95 +626,78 @@ p.text-s {
   padding: 20px; }
 
 .text-block1 {
-  position: absolute;
-  bottom: 20%;
-  left: 1.7%;
-  width: 30%;
-  height: 10%;
+  margin-top: -31%;
+  width: 100%;
+  height: 25%;
   background-color: #333333;
   opacity: 0.6; }
 
 .text-block2 {
-  position: absolute;
-  bottom: 20%;
-  left: 35%;
-  width: 30%;
-  height: 10%;
+  margin-top: -31%;
+  width: 100%;
+  height: 25%;
   background-color: #333333;
   opacity: 0.6; }
 
 .text-block3 {
-  position: absolute;
-  bottom: 20%;
-  left: 68.4%;
-  width: 30%;
-  height: 10%;
+  margin-top: -31%;
+  width: 100%;
+  height: 25%;
   background-color: #333333;
   opacity: 0.6; }
 
 p.text {
-  padding: 10px;
-  margin: 0px;
+  padding: 35px 5px 5px 5px;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px;
+  font-size: 1.2vw;
   text-align: center; }
 
 * {
   box-sizing: border-box; }
 
 .container-l {
-  position: absolute;
-  top: 17%;
-  left: 20%;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
   .container-l img {
-    width: 400px;
-    height: 300px;
+    width: 35vw;
+    height: 40vh;
     border-radius: 10px; }
   .container-l a {
     text-decoration: none; }
 
+.col-l {
+  padding: 20px; }
+
 .text-block1-l {
-  position: absolute;
-  bottom: 15%;
-  left: 0;
-  width: 49.7%;
-  height: 10%;
+  margin-top: -13%;
+  width: 100%;
+  height: 15%;
   background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 .text-block2-l {
-  position: absolute;
-  bottom: 15%;
-  left: 50.2%;
-  width: 49.8%;
-  height: 10%;
+  margin-top: -13%;
+  width: 100%;
+  height: 15%;
   background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 p.text-l {
-  padding: 3px;
-  margin: 0;
+  padding: 5px 3px 3px 3px;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px;
+  font-size: 1.2vw;
   text-align: center; }
 
 .specials {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  top: 60%;
+  margin-top: 10%;
   margin-left: 10%;
   width: 15%;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 2.4vw;
   text-decoration: none;
   background: #333333;
   opacity: 0.699999988079071044921875;
@@ -744,26 +725,21 @@ p.text-l {
   font-size: 1.2vw; }
 
 .special-offers-page-title {
-  position: absolute;
-  top: 6%;
-  margin-left: 43%;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 30px;
-  z-index: 2; }
+  font-size: 1.3vw;
+  text-align: center; }
 
 * {
   box-sizing: border-box; }
 
 .container-SO {
-  position: absolute;
-  top: 20%;
-  left: 7%;
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  justify-content: center; }
   .container-SO img {
-    width: 350px;
-    height: 490px;
+    width: 25vw;
+    height: 50vh;
     border-radius: 10px;
     cursor: pointer; }
 
@@ -771,53 +747,38 @@ p.text-l {
   padding: 20px; }
 
 .text-block-SO-1 {
-  position: absolute;
-  bottom: 7%;
-  left: 1.7%;
-  width: 30%;
-  height: 7%;
+  margin-top: -37%;
+  width: 100%;
+  height: 25%;
   background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 .text-block-SO-2 {
-  position: absolute;
-  bottom: 7%;
-  left: 35%;
-  width: 30%;
-  height: 7%;
+  margin-top: -37%;
+  width: 100%;
+  height: 25%;
   background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 .text-block-SO-3 {
-  position: absolute;
-  bottom: 7%;
-  left: 68.4%;
-  width: 30%;
-  height: 7%;
+  margin-top: -37%;
+  width: 100%;
+  height: 25%;
   background-color: #333333;
   opacity: 0.60000002384185791015625; }
 
 p.text-SO {
-  padding: 5px;
-  margin: 0;
+  padding: 35px 5px 5px 5px;
   color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 25px;
+  font-size: 1.2vw;
   text-align: center; }
 
 .special-offer-label-1 {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  top: 20%;
-  margin-left: 10%;
-  width: 15%;
+  width: 35%;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 2.4vw;
   background: #333333;
   opacity: 0.699999988079071044921875;
   border-color: white;
@@ -830,18 +791,10 @@ p.text-SO {
   font-family: "Ubuntu", sans-serif; }
 
 .special-offer-label-2 {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  top: 20%;
-  margin-left: 38.5%;
-  width: 15%;
+  width: 35%;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 2.4vw;
   background: #333333;
   opacity: 0.699999988079071044921875;
   border-color: white;
@@ -854,18 +807,10 @@ p.text-SO {
   font-family: "Ubuntu", sans-serif; }
 
 .special-offer-label-3 {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  top: 20%;
-  margin-left: 67%;
-  width: 15%;
+  width: 35%;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 2.4vw;
   background: #333333;
   opacity: 0.699999988079071044921875;
   border-color: white;
@@ -943,3 +888,42 @@ p.text-B {
     font-size: 1.2vw;
     font-family: "Ubuntu", sans-serif;
     color: white; }
+
+.info-container-todayspecial {
+  background-color: white;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  margin: auto;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 0.7vw; }
+
+.col-todayspecial {
+  width: 15%;
+  padding: 10px;
+  display: flex; }
+  .col-todayspecial p {
+    padding-left: 10px; }
+
+.info-icons-todayspecial {
+  width: 2.4vw;
+  height: 3.6vh; }
+
+.item-description-todayspecial {
+  text-align: center;
+  background-color: #333333;
+  width: 100vw;
+  height: 35vh;
+  color: white;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1vw; }
+
+.description-todayspecial p {
+  padding-top: 40px; }
+
+.ingredients-title-todayspecial {
+  margin-top: 5%;
+  font-size: 1vw; }
+
+.ingredients-items-todayspecial {
+  font-size: 1vw; }

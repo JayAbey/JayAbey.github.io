@@ -19,16 +19,14 @@ $secondary-color:white;
   box-sizing:border-box;
 }
 .container-VM{
-  position: absolute;
-  top:22%;
-  left:7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
+  justify-content: center;
     img{
-      width:350px;
-      height:490px;
+      width:25vw;
+      height:50vh;
       @include border-radius(10px);
       cursor: pointer;
     }
@@ -40,37 +38,30 @@ $secondary-color:white;
   padding: 20px;
 }
 .text-block1{
-  position:absolute;
-  bottom:20%;
-  left:1.7%;
-  width:30%;
-  height:10%;
+  margin-top:-31%;
+  width:100%;
+  height:25%;
   background-color: $primary-color;
   opacity: 0.6;
 }
 .text-block2{
-  position:absolute;
-  bottom:20%;
-  left:35%;
-  width:30%;
-  height:10%;
+  margin-top:-31%;
+  width:100%;
+  height:25%;
   background-color: $primary-color;
   opacity: 0.6;
 }
 .text-block3{
-  position:absolute;
-  bottom:20%;
-  left:68.4%;
-  width:30%;
-  height:10%;
+  margin-top:-31%;
+  width:100%;
+  height:25%;
   background-color: $primary-color;
   opacity: 0.6;
 }
 p.text{
-  padding:10px;
-  margin:0px;
+  padding:35px 5px 5px 5px;
   color: $secondary-color;
   font-family: $body-font;
-  font-size: 25px;
+  font-size: 1.2vw;
   text-align: center;
 }

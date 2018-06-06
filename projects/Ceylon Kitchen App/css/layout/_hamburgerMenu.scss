@@ -12,15 +12,13 @@ $secondary-color:white;
   border-radius: $radius;
 }
 
-
-
 .sidenav{
   position: absolute;
   margin-top:0;
   margin-left: -300px;
   width:15vw;
   height:100vh;
-  // max-height: 100vh;
+  max-height: 100vh;
   background:$primary-color;
   opacity: 0.9;
   border-color: $secondary-color;

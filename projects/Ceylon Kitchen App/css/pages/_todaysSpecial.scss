@@ -7,7 +7,6 @@ $secondary-color:white;
 
 /*Back button*/
 .todays-special-back{
-  // margin-top:5%;
   margin-left:2%;
     a{
       text-decoration: none;
@@ -15,4 +14,45 @@ $secondary-color:white;
       font-family: $base-font;
       color: $secondary-color;
     }
+}
+
+.info-container-todayspecial {
+background-color : $secondary-color;
+width : 100vw;
+height :8vh;
+display : flex;
+margin : auto;
+font-family : $body-font;
+font-size : 0.7vw;
+}
+.col-todayspecial {
+width : 15%;
+padding : 10px;
+display : flex;
+    p {
+        padding-left : 10px;
+        }
+}
+.info-icons-todayspecial {
+width : 2.4vw;
+height : 3.6vh;
+}
+.item-description-todayspecial {
+text-align: center;
+background-color : $primary-color;
+width : 100vw;
+height : 35vh;
+color : $secondary-color;
+font-family : $body-font;
+font-size : 1vw;
+}
+.description-todayspecial p{
+padding-top:40px;
+}
+.ingredients-title-todayspecial {
+margin-top:5%;
+font-size : 1vw;
+}
+.ingredients-items-todayspecial {
+font-size : 1vw;
 }

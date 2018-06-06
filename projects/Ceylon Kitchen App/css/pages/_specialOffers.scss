@@ -6,26 +6,21 @@ $secondary-color:white;
 
 
 .special-offers-page-title {
-position : absolute;
-top : 6%;
-margin-left : 43%;
 color : $secondary-color;
 font-family : $body-font;
-font-size : 30px;
-z-index : 2;
+font-size : 1.3vw;
+text-align: center;
 }
 * {
 box-sizing : border-box;
 }
 .container-SO {
-position : absolute;
-top : 20%;
-left : 7%;
 display : flex;
 flex-flow : row wrap;
+justify-content: center;
     img {
-        width : 350px;
-        height : 490px;
+        width : 25vw;
+        height : 50vh;
         border-radius : 10px;
         cursor : pointer;
         }
@@ -34,53 +29,38 @@ flex-flow : row wrap;
 padding : 20px;
 }
 .text-block-SO-1 {
-position : absolute;
-bottom : 7%;
-left : 1.7%;
-width : 30%;
-height : 7%;
+margin-top : -37%;
+width : 100%;
+height : 25%;
 background-color : $primary-color;
 opacity : 0.60000002384185791015625;
 }
 .text-block-SO-2 {
-position : absolute;
-bottom : 7%;
-left : 35%;
-width : 30%;
-height : 7%;
+margin-top : -37%;
+width : 100%;
+height : 25%;
 background-color : $primary-color;
 opacity : 0.60000002384185791015625;
 }
 .text-block-SO-3 {
-position : absolute;
-bottom : 7%;
-left : 68.4%;
-width : 30%;
-height : 7%;
+margin-top : -37%;
+width : 100%;
+height : 25%;
 background-color : $primary-color;
 opacity : 0.60000002384185791015625;
 }
 p.text-SO {
-padding : 5px;
-margin : 0;
+padding:35px 5px 5px 5px;
 color : $secondary-color;
 font-family : $body-font;
-font-size : 25px;
+font-size : 1.2vw;
 text-align : center;
 }
 .special-offer-label-1 {
-position : absolute;
-display : flex;
-flex-direction : column;
-justify-content : center;
-align-items : center;
-z-index : 1;
-top : 20%;
-margin-left : 10%;
-width : 15%;
+width : 35%;
 padding : 10px 10px 10px 10px;
 border-radius : 10px;
-font-size : 50px;
+font-size : 2.4vw;
 background : $primary-color;
 opacity : 0.699999988079071044921875;
 border-color : $secondary-color;
@@ -93,18 +73,10 @@ transition : background-color 0.3s;
 font-family : $base-font;
 }
 .special-offer-label-2 {
-position : absolute;
-display : flex;
-flex-direction : column;
-justify-content : center;
-align-items : center;
-z-index : 1;
-top : 20%;
-margin-left : 38.5%;
-width : 15%;
+width : 35%;
 padding : 10px 10px 10px 10px;
 border-radius : 10px;
-font-size : 50px;
+font-size : 2.4vw;
 background : $primary-color;
 opacity : 0.699999988079071044921875;
 border-color : $secondary-color;
@@ -117,18 +89,10 @@ transition : background-color 0.3s;
 font-family : $base-font;
 }
 .special-offer-label-3 {
-position : absolute;
-display : flex;
-flex-direction : column;
-justify-content : center;
-align-items : center;
-z-index : 1;
-top : 20%;
-margin-left : 67%;
-width : 15%;
+width : 35%;
 padding : 10px 10px 10px 10px;
 border-radius : 10px;
-font-size : 50px;
+font-size : 2.4vw;
 background : $primary-color;
 opacity : 0.699999988079071044921875;
 border-color : $secondary-color;

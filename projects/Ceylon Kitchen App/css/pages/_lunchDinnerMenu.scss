@@ -10,59 +10,53 @@ $secondary-color:white;
 box-sizing : border-box;
 }
 .container-l {
-position : absolute;
-top : 17%;
-left : 20%;
 display : flex;
 flex-direction : row;
+justify-content: center;
         img {
-            width : 400px;
-            height : 300px;
+            width : 35vw;
+            height : 40vh;
             border-radius : 10px;
             }
         a {
             text-decoration : none;
         }
 }
+.col-l{
+padding: 20px;
+}
 .text-block1-l {
-position : absolute;
-bottom : 15%;
-left : 0;
-width : 49.7%;
-height : 10%;
+margin-top : -13%;
+width : 100%;
+height : 15%;
 background-color : $primary-color;
 opacity : 0.60000002384185791015625;
 }
 .text-block2-l {
-position : absolute;
-bottom : 15%;
-left : 50.2%;
-width : 49.8%;
-height : 10%;
+margin-top : -13%;
+width : 100%;
+height : 15%;
 background-color : $primary-color;
 opacity : 0.60000002384185791015625;
 }
 p.text-l {
-padding : 3px;
-margin : 0;
+padding : 5px 3px 3px 3px;
 color : $secondary-color;
 font-family : $body-font;
-font-size : 25px;
+font-size : 1.2vw;
 text-align : center;
 }
 .specials {
-position : absolute;
-display : flex;
-flex-direction : column;
-justify-content : center;
-align-items : center;
-z-index : 1;
-top : 60%;
+// display : flex;
+// flex-direction : column;
+// justify-content : center;
+// align-items : center;
+margin-top : 10%;
 margin-left : 10%;
 width : 15%;
 padding : 10px 10px 10px 10px;
 border-radius : 10px;
-font-size : 50px;
+font-size : 2.4vw;
 text-decoration : none;
 background : $primary-color;
 opacity : 0.699999988079071044921875;
