@@ -230,104 +230,99 @@ table {
   border-spacing: 0
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 /*DISCO BACKGROUND*/
-
 .disco-background {
-  z-index: -1;
-  position: absolute;
-  left: 0;
+  position: fixed;
+  margin-top:-1%; 
+  margin-left: -50%; 
   width: 100vw;
   height: 100vh;
 }
-
 
 /*CONTAINER*/
-
 .container {
-  /*overflow: scroll;*/
-  z-index: 999;
-  position: absolute;
+  position: relative;
   width: 100vw;
-  height: 100vh;
 }
-
 
 /*HEADER*/
-
-.header .logo {
-  position: absolute;
-  left: 0;
+.header{
+  display: flex;
+  flex-direction: row;
 }
-
+.header .logo {
+  margin-left: 0;
+}
 .logo img {
   width: 25vw;
   margin: 30px 0 0 30px;
 }
-
 .header .contact {
-  position: absolute;
-  right: 0;
-  margin: 80px 80px 0 0;
+margin-top:5%;
+margin-left: 60%;
   font-size: 1vw;
   font-family: 'Anonymous Pro', monospace;
   letter-spacing: 1px;
 }
-
 .contact:hover {
   font-size: 1.1vw;
 }
-
 .contact a {
   color: #fff;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
 
+/*DISCO BALL*/
+.container .disco-ball{
+  position: relative;
+  margin-top: -10%;
+}
 
 /*PAGE INTRO*/
-
 .page-intro {
-  margin-top: 7%;
+  margin-top:2%;
   color: white;
   text-align: left;
   padding-left: 50px;
   font-family: 'Anonymous Pro', monospace;
 }
-
 .page-intro h1 {
-  font-size: 65px;
+  font-size: 2.8vw;
 }
-
 .page-intro p {
-  font-size: 25px;
+  margin-top:2%;
+  font-size: 2vw;
 }
-
 
 /*DESIGNERS*/
-
 .designers {
-  margin-top: 3%;
+  margin-top: 5%; 
   display: flex;
   align-items: flex-end;
   justify-content: center;
   font-family: 'Anonymous Pro', monospace;
 }
-
 .designers div {
   padding: 0px 100px 0px 100px;
 }
-
 .designers h1 {
   font-size: 1.5vw;
   color: white;
   text-decoration: none;
 }
+.designers a{
+  text-decoration: none;
+}
 .designers img {
-  height: 500px;
+  height: 50vh;
   padding-top: 50px;
 }
 
@@ -339,37 +334,33 @@ a:hover {
   .logo img {
     width: 50vw;
   }
-
   .header .contact {
+    margin-top: 15%;
+    margin-left: 20%;
     font-size: 2vw;
   }
   .contact:hover {
     font-size: 2.2vw;
   }
-  /*disco ball*/
-  .container .disco-ball {
-    margin-top: 20%;
-    margin-left: 4%;
-  }
   /*page intro*/
   .page-intro {
+    margin-top: 5%; 
     padding-left: 0px;
   }
   .page-intro h1 {
-    font-size: 43px;
+    font-size: 6vw;
     text-align: center;
   }
   .page-intro p {
-    font-size: 17px;
+    font-size: 3.5vw;
     text-align: center;
   }
-
   /*designers*/
   .designers div {
     padding: 40px 30px 0px 30px;
   }
   .designers img {
-    height: 350px;
+    height: 35vh;
     padding-top: 30px;
   }
   .designers h1 {

@@ -17,7 +17,9 @@
 
       <!-- Disco Ball-->
       <iframe class="disco-ball" v-bind:src="discoBall_iframeURL"></iframe>
-      
+
+     <div class="designer-flexbox">
+
       <!--Designer details-->
       <div class="selected-designer" v-for="info in selectedProject.owners">
       <router-link v-bind:to="'/game-design-designer/' + featuredDesigner.webID">
@@ -43,7 +45,7 @@
         <!-- Selected Project details-->
         <div class="selected-project">
           <h1> {{ selectedProject.name }} </h1>
-          <div> {{ selectedProject.description }} </div>
+          <div class="selected-project-description"> {{ selectedProject.description }} </div>
           <br/>
           <div class="projectStats">
             <div><img src="../../images/jay/behanceViewsIcon.png"> {{ selectedProject.stats.views}} </div>
@@ -51,7 +53,7 @@
             <div><img src="../../images/jay/behanceCommentsIcon.png"> {{ selectedProject.stats.comments}} </div>
           </div>
 
-          <div v-for="module in selectedProject.modules">
+          <div class="selected-project-content" v-for="module in selectedProject.modules">
             <br/>
             <h2>{{ module.text_plain }}</h2>
             <img v-bind:src="module.src">
@@ -59,6 +61,8 @@
         </div>
 
       </div>
+
+    </div>
 
     </div>
 
@@ -253,216 +257,199 @@ table {
   border-spacing: 0
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 /*DISCO BACKGROUND*/
-
 .disco-background {
-  z-index: -1;
-  position: absolute;
-  left: 0;
+  position: fixed;
+  margin-top:-1%; 
+  margin-left: -50%; 
   width: 100vw;
   height: 100vh;
 }
-
 
 /*CONTAINER*/
-
 .container {
-  /*overflow: scroll;*/
-  z-index: 999;
-  position: absolute;
+  position: relative; 
   width: 100vw;
-  height: 100vh;
 }
-
 
 /*HEADER*/
-
-.header .logo {
-  position: absolute;
-  left: 0;
+.header{
+    display: flex;
+  flex-direction: row;
 }
-
+.header .logo {
+    margin-left: 0;
+}
 .logo img {
   width: 25vw;
   margin: 30px 0 0 30px;
 }
-
 .header .contact {
-  position: absolute;
-  right: 0;
-  margin: 80px 80px 0 0;
+  margin-top:5%;
+margin-left: 60%;
   font-size: 1vw;
   font-family: 'Anonymous Pro', monospace;
   letter-spacing: 1px;
 }
-
 .contact:hover {
   font-size: 1.1vw;
 }
-
 .contact a {
   color: white;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
 
+/*DISCO BALL*/
+.container .disco-ball{
+  position: relative;
+  margin-top: -10%;
+}
+
+/*Designer Flexbox*/
+.container .designer-flexbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 /*DESIGNER*/
-
 .selected-designer {
-  position: absolute;
-  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 3%;
   color: white;
-  font-size: 25px;
+  font-size: 2vw;
   font-family: 'Anonymous Pro', monospace;
 }
-
-.selected-designer div{
-  color: white;
-}
-
-.selected-designer .selected-designer-info {
-  margin-top: 160%;
-}
-
 .selected-designer .selected-designer-character {
-  margin-top: 30%;
+  margin-top: 20%;
 }
-
-.selected-designer-character img {
-  height: 400px;
+.selected-designer a{
+  color: white;
+  text-decoration: none;
 }
-
-
+.selected-designer .selected-designer-character img {
+  height:50vh;
+}
 
 /* PROJECT DISPLAY */
-
-.project-display {
-  left: 25%;
-  margin-top: 8%;
-  position: absolute;
-  height: 750px;
-  width: 1150px;
+.container .designer-flexbox .project-display {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%; 
+   margin-top: 5%; 
+  width: 70vw;
   background-color: white;
-  overflow: auto;
-  overflow-x: hidden;
   box-shadow: inset 0px 10px 10px 0px rgb(166, 166, 166), inset 0px 4px 20px 0 rgb(166, 166, 166);
 }
 
-
 /*BACK button*/
-
 .back-button {
   margin-top: 3%;
   font-size: 1vw;
 }
-
 .back-button a {
   color: #9E9E9E;
   text-decoration: none;
 }
-
 .back-button a:hover {
   font-size: 1.5vw;
 }
 
-
-
 /*PROJECT*/
-
-.selected-project {
+.container .designer-flexbox .project-display .selected-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'Anonymous Pro', monospace;
-  font-size: 20px;
+  font-size: 1vw;
 }
-
 .selected-project h1 {
   margin-top: 3%;
-  font-size: 40px;
+  font-size: 2vw;
   color: #9E9E9E;
 }
-
 .projectStats {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   color: #9E9E9E;
 }
-
 .projectStats div {
   padding-right: 30px;
 }
-
 .projectStats img {
-  width: 50px;
+  width: 2.2vw;
 }
 
 
 /*REPONSIVE DESIGN */
-
 @media screen and (max-width:640px) {
-
   /*header*/
   .logo img {
     width: 50vw;
   }
   .header .contact {
+    margin-top: 15%;
+    margin-left: 20%;
     font-size: 2vw;
   }
   .contact:hover {
     font-size: 2.2vw;
   }
-  /*container*/
-  .container {
-    overflow-x: hidden;
-  }
-  /*disco ball*/
-  .container .disco-ball {
-    margin-top: 20%;
-    margin-left: 4%;
+    /*designer flexbox*/
+  .container .designer-flexbox{
+    flex-direction: column;
   }
   /*designer*/
-  .selected-designer .selected-designer-info {
-    margin-top: 30%;
+  .selected-designer {
+    margin-top: 6%; 
+    font-size: 3vw;
   }
   .selected-designer .selected-designer-character {
-    margin-top: 10%;
+    margin-top: 6%;
   }
   .selected-designer-character img {
-    height: 300px;
+    height: 30vh;
   }
-  .selected-designer {
-    margin-left: 41%;
-    font-size: 20px;
-  }
+
   /*projects*/
-  .project-display {
-    left: 10%;
-    margin-top: 70%;
-    height: 1000px;
-    width: 500px;
-    overflow-x: hidden;
+   .container .designer-flexbox .project-display  {
+    margin-left: 0;
+    justify-content: center;
+    width: 100vw;
   }
   .back-button {
     margin-top: 5%;
-    font-size: 2.5vw;
-  }
-  .back-button a:hover {
     font-size: 3vw;
   }
-  .selected-project {
-    font-size: 17px;
-    overflow-x: scroll;
+  .back-button a:hover {
+    font-size: 4vw;
   }
-  .selected-project h1 {
+.container .designer-flexbox .project-display .selected-project {
+    font-size: 3vw;
+  }
+  .container .designer-flexbox .project-display .selected-project h1 {
     margin-top: 5%;
-    font-size: 25px;
+    font-size: 4vw;
   }
   .projectStats img {
-    width: 30px;
+    width: 5vw;
   }
+  .container .designer-flexbox .project-display .selected-project .selected-project-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+padding: 20px 20px 20px 20px;
+    }
 }
 </style>

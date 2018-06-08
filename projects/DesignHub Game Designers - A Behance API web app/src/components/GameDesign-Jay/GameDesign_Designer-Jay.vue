@@ -4,7 +4,7 @@
     <!-- Disco background-->
     <iframe class="disco-background" v-bind:src="discoBackground_iframeURL"> </iframe>
 
-    <div class="container">
+     <div class="container"> 
       <!--Header -->
       <div class="header">
         <div class="logo">
@@ -18,6 +18,7 @@
       <!-- Disco Ball-->
       <iframe class="disco-ball" v-bind:src="discoBall_iframeURL"></iframe>
 
+<div class="designer-flexbox">
       <!--Designer details-->
       <div class="selected-designer">
         <div class="selected-designer-info">
@@ -49,8 +50,9 @@
         </div>
 
       </div>
-
     </div>
+
+     </div> 
 
   </div>
 </template>
@@ -244,211 +246,166 @@ table {
 }
 
 * {
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-
 
 /*DISCO BACKGROUND*/
-
 .disco-background {
-  z-index: -1;
-  position: absolute;
-  left: 0;
+  position: fixed;
+  margin-top:-1%; 
+  margin-left: -50%; 
   width: 100vw;
   height: 100vh;
-  background-size: 100%;
 }
-
-
 
 /*CONTAINER*/
-
 .container {
-  /*overflow: scroll;*/
-  z-index: 999;
-  position: absolute;
+  position: relative; 
   width: 100vw;
-  height: 100vh;
-  background-size: 100%;
 }
-
-
 
 /*HEADER*/
-
-.header .logo {
-  position: absolute;
-  left: 0;
+.header{
+  display: flex;
+  flex-direction: row;
 }
-
+.header .logo {
+    margin-left: 0;
+}
 .logo img {
   width: 25vw;
   margin: 30px 0 0 30px;
 }
-
 .header .contact {
-  position: absolute;
-  right: 0;
-  margin: 80px 80px 0 0;
+  margin-top:5%;
+margin-left: 60%;
   font-size: 1vw;
   font-family: 'Anonymous Pro', monospace;
   letter-spacing: 1px;
 }
-
 .contact:hover {
   font-size: 1.1vw;
 }
-
 .contact a {
   color: white;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
 
-
-
-/*DESIGNER*/
-
-.selected-designer-info {
-  margin-top: 160%;
+/*DISCO BALL*/
+.container .disco-ball{
+  position: relative;
+  margin-top: -10%;
 }
 
+/*Designer Flexbox*/
+.container .designer-flexbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/*DESIGNER*/
 .selected-designer {
-  position: absolute;
-  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 3%;
   color: white;
-  font-size: 25px;
+  font-size: 2vw;
   font-family: 'Anonymous Pro', monospace;
 }
-
 .selected-designer .selected-designer-character {
-  margin-top: 30%;
+   margin-top: 20%; 
 }
-
-.selected-designer-character img {
-  height: 400px;
+.selected-designer .selected-designer-character img {
+  height:50vh;
 }
-
-
 
 /* PROJECT DISPLAY */
-
-.project-display {
-  left: 21%;
-  margin-top: 5%;
-  position: relative;
-  height: 780px;
-  width: 1440px;
+.container .designer-flexbox .project-display {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%; 
+   margin-top: 5%; 
+  width: 70vw;
   background-color: white;
-  overflow: scroll;
-  overflow-x: scroll;
   box-shadow: inset 0px 10px 10px 0px rgb(166, 166, 166), inset 0px 4px 20px 0 rgb(166, 166, 166);
 }
 
-
-
-/*.project-display::-webkit-scrollbar {
-  display: none;
-}*/
-
-
 /*BACK button*/
-
 .back-button {
   margin-top: 3%;
   font-size: 1vw;
 }
-
 .back-button a {
   color: #9E9E9E;
   text-decoration: none;
 }
-
 .back-button a:hover {
   font-size: 1.5vw;
 }
 
-
-
 /*PROJECTS*/
-
-.designer-project-list {
+.container .designer-flexbox .project-display .designer-project-list {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+   flex-wrap: wrap; 
+   justify-content: center;
   font-family: 'Anonymous Pro', monospace;
   color: #9E9E9E;
-  font-size: 20px;
-  top: 15%;
-  left: 3%;
-  position: absolute;
-  height: 40vw;
+  font-size: 1vw;
+  margin-top: 5%;
 }
-
 .designer-project-list a {
   color: #9E9E9E;
   text-decoration: none;
 }
-
 .designer-project-list div {
-  padding: 20px 80px 10px 10px;
+   padding: 20px 80px 10px 10px; 
 }
-
 .designer-project-list img {
   padding: 20px 80px 10px 70px;
 }
 
 
-
 /*REPONSIVE DESIGN */
-
 @media screen and (max-width:640px) {
-
   /*header*/
   .logo img {
     width: 50vw;
   }
-
   .header .contact {
+    margin-top: 15%;
+    margin-left: 20%;
     font-size: 2vw;
   }
   .contact:hover {
     font-size: 2.2vw;
   }
-  /*container*/
-  .container {
-    overflow-x: hidden;
-  }
-  /*disco ball*/
-  .container .disco-ball {
-    margin-top: 20%;
-    margin-left: 4%;
+  /*designer flexbox*/
+  .container .designer-flexbox{
+    flex-direction: column;
   }
   /*designer*/
-  .selected-designer-info {
-    margin-top: 40%;
+  .selected-designer {
+    margin-top: 6%; 
+    font-size: 3vw;
   }
   .selected-designer .selected-designer-character {
-    margin-top: 10%;
+     margin-top: 6%; 
   }
   .selected-designer-character img {
-    height: 300px;
+    height: 30vh;
   }
-  .selected-designer {
-    margin-left: 41%;
-    font-size: 20px;
-  }
+
   /*projects*/
-  .project-display {
-    left: 10%;
-    margin-top: 70%;
-    height: 1000px;
-    width: 500px;
-    overflow-x: hidden;
+   .container .designer-flexbox .project-display {
+    width: 100vw;
+    justify-content: center;
+    margin-left: 0;
   }
   .back-button {
     margin-top: 5%;
@@ -457,18 +414,10 @@ a:hover {
   .back-button a:hover {
     font-size: 3vw;
   }
-  .designer-project-list {
-    flex-direction: row;
-    top: 6%;
-    left: 15%;
-    position: absolute;
-    height: 40vw;
-  }
-  .designer-project-list div {
-    padding: 20px 80px 10px 10px;
-  }
-  .designer-project-list img {
-    padding: 20px 80px 10px 70px;
+  .container .designer-flexbox .project-display .designer-project-list {
+    font-size: 3vw;
+     justify-content: center;
+ flex-direction: column;  
   }
 }
 </style>

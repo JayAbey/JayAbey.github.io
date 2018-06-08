@@ -15,13 +15,13 @@ Vue.use(VueRouter)
 Vue.use(VueResource)
 
 //import components
-import Contact from './components/Contact/Contact'
+// import Contact from './components/Contact/Contact'
 import GameDesignHome from './components/GameDesign-Jay/GameDesign_Home-Jay'
 import GameDesignDesigner from './components/GameDesign-Jay/GameDesign_Designer-Jay'
 import GameDesignProjects from './components/GameDesign-Jay/GameDesign_Project-Jay'
 
 const routes = [
-  { path: '/contact', component: Contact },
+  // { path: '/contact', component: Contact },
 
   { path: '/', component: GameDesignHome },
   { path: '/game-design-designer/:selectedDesignerID', component: GameDesignDesigner, props: true },
