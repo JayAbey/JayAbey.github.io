@@ -9,28 +9,48 @@ $primary-font-color: #a4a4a4;
 
 /*Hotel list*/
 .accommodation-list{
-  margin-top:5%;
+  margin-top:3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 @include flex-flow(row wrap);
+justify-content: center;
 }
 .accommodation-list-item{
-   margin-left: 15%;
-   width: 500px;
-   height: 300px;
+   width: 25vw;
+   height: 30vh;
    padding: 40px;
    border-radius: 3em;
+}
+.accommodation-list-item:hover{
+  cursor: pointer;
 }
 .text-block{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 @include flex-flow(row wrap);
-  padding-left:250px;
+  padding-left:2.5vw;
   font-family: $primary-font;
   color:$primary-font-color;
 }
 .title{
-  padding-right:150px;
+  padding-right:15vw;
+}
+
+
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+  .accommodation-list{
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  .accommodation-list-item{
+    width:50vw;
+    margin-left: 8%;
+  }
+  .text-block{
+    margin-left:18%;
+  }
+
 }

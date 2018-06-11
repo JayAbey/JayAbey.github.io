@@ -1,9 +1,16 @@
 /**********Home Page**********/
 .logo-home img{
     margin: 0;
-    position: absolute;
-    top:10%;
-    left: 50%;
+    margin-top:10%;
+    margin-left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
+    width: 38vw;
+}
+
+
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+    .logo-home img{
+        margin-left: 40%;
+    }
 }

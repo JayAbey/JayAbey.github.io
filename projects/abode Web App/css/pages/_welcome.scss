@@ -14,35 +14,53 @@ $secondary-color: #c74343;
     background: url("../images/fern.png") no-repeat fixed center;
 }
 .logo img{
-    margin: 0;
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 10%;
+    margin-left:35%;
+    display: flex;
 }
 .display-text{
-    margin-top: 28%;
-        p{
-            margin:0;
-            font-family: $primary-font;
-            color: $primary-font-color;
-            text-align: center;
-            font-size: 40px;
-        }
+    p{
+      font-family: $primary-font;
+      color: $primary-font-color;
+      text-align: center;
+      font-size: 3vw;
+      margin: 0;
+    }
 }
 .start-button {
-  position: absolute;
-  margin:0;
-  top: 65%;
-  left:40%;
-  width: 18%;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  width: 40vw;
   padding: 10px 10px 10px 10px;
-@include border-radius(10px);
-  font-size: 20px;
+  @include border-radius(10px);
+  font-size: 2vw;
   background: $secondary-color;
     a {
+        text-align: center;
         text-decoration: none;
         color: white;
         font-family: $primary-font;
     }
+}
+
+
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+.logo img{
+    margin-top: 35%;
+    margin-left:20%;
+}
+.display-text{
+    margin-top:2%;
+        p{
+          font-size: 6vw;
+        }
+}
+.start-button {
+    width: 60vw;
+    margin-top:2%;
+    font-size: 4vw;
+}
+
 }

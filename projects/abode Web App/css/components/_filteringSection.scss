@@ -16,31 +16,34 @@ $secondary-color: #c74343;
 
 /*Filtering section*/
 .filtering-section{
-  margin-top:10%;
+  margin-left:30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1vw;
+  text-align: center;
 }
 /*Search bar*/
 #search-location{
-  margin-left:40%;
-  width: 350px;
+  width: 35vw;
   background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
   padding: 10px 10px 10px 35px;
   border-radius: 10px;
   font-family: $primary-font;
-  font-size: 16px;
 }
 .locations, .accommodation-type{
-  width:350px;
+  width:35vw;
 }
 .period-of-stay{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 @include flex-flow(row wrap);
-  margin-left:43%;
-  padding-top: 25px;
+  margin-left:10%;
+  padding: 25px 30px 10px 30px;
 }
 .checkin, .checkout{
-  width:80px;
+  width:8vw;
   padding: 0.5em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -48,48 +51,78 @@ $secondary-color: #c74343;
   border-style: solid;
   border-width: 1px;
   font-family: $primary-font;
-  font-size: 16px;
   text-align: center;
 }
 .checkout{
-  margin-left:10%;
+  margin-left:8%;
 }
 /*guests and price*/
 .container{
-  margin-left: 41%;
+  margin-left: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 @include flex-flow(row wrap);
 }
 .col {
-  position : relative;
   margin:30px;
   cursor: pointer;
   font-family: $primary-font;
-  font-size: 16px;
 }
 .guests-number{
-  width:100px;
+  width:10vw;
 }
 .price-range{
-  width:180px;
+  width:18vw;
 }
 .accommo-type{
   font-family: $primary-font;
-  font-size: 16px;
-  margin-left: 42%;
+  margin-left: -40%;
 }
 .submitButton{
-  position: absolute;
-  top: 45%;
-  left:46%;
+  margin-top:4%;
+  margin-left:-40%;
   width: 10%;
   padding: 10px 10px 10px 10px;
 @include border-radius(10px);
-  font-size: 20px;
   background: $secondary-color;
   font-family: $primary-font;
   color: white;
-  z-index:1;
+}
+
+
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+
+/*Filtering section*/
+.filtering-section{
+  margin-top:-2%;
+  margin-left:18%;
+  font-size: 2vw;
+}
+/*Search bar*/
+#search-location{
+  width: 5vw;
+  margin-left: 0;
+}
+.period-of-stay{
+  margin-left: -4%;
+  padding: 20px 30px 0px 30px;
+}
+.checkin, .checkout{
+  width:15vw;
+}
+/*guests and price*/
+.container{
+  margin-left: -7%;
+}
+.guests-number{
+  width:15vw;
+}
+.price-range{
+  width:22vw;
+}
+.submitButton{
+  width:15%;
+}
 }

@@ -10,33 +10,31 @@ $primary-font-color: #a4a4a4;
 /* The Modal (background) */
 .modal {
   display: none;
-  position: fixed;
-  z-index: 2;
-  left: 5%;
-  top: 5%;
-  right: 5%;
-  bottom: 5%;
   text-align: center;
+  margin-top:-100%;
+  position: relative;
+  z-index: 2;
 }
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
-  display: block;
-  width: 1000px;
-  height: 550px;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
   max-width: 100%;
   }
-    /*Item description section*/
+/*Item description section*/
 .description {
   margin: auto;
-  display: block;
+  // display: block;
   background-color:white;
-  width: 1000px;
-  height: 400px;
+  width: 80vw;
+  // height: 40vh;
   color: $primary-font-color;
   font-family: $primary-font;
-  font-size: 20px;
+  font-size: 1vw;
   max-width: 100%;
+  border:0.7px solid #a4a4a4;
 }
 .accommodation-general, .accommodation-filtered{
   display: -webkit-box;
@@ -45,30 +43,25 @@ $primary-font-color: #a4a4a4;
 @include flex-flow(row wrap);
 }
 .accommodation-name{
-  font-size: 30px;
+  font-size: 1.3vw;
   text-align: left;
   font-weight: bold;
 }
 .accommodation_type{
-  position:absolute;
-  margin-top:-2%;
+  // position:absolute;
+  // margin-top:-2%;
   text-align: left;  
 }
 .accommodation-general div{
   padding: 35.5px;
 }
 .accommodation-filtered{
-  position: absolute;
-  top: 80%;
-  left:25%;
+  // position: absolute;
+  // margin-top: 80%;
+  // margin-left:25%;
     div{
       padding: 55px;
       }
-}
-.meals{
-    position: absolute;
-    top:95%;
-    right: 25%;
 }
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
@@ -85,26 +78,46 @@ $primary-font-color: #a4a4a4;
     transform: scale(1); } }
 /* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 50px;
-  color: $primary-font-color;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s; 
+  display: none;
+  // color: $primary-font-color;
+  // font-size: 4vw;
+  // margin-top:50%;
+  // margin-left:80%;
+  // font-weight: bold;
+  // transition: 0.3s; 
 }
-.close:hover,
-.close:focus {
-  color: $primary-font-color;
-  text-decoration: none;
-  cursor: pointer; 
-}
+// .close:hover,
+// .close:focus {
+//   color: $primary-font-color;
+//   text-decoration: none;
+//   cursor: pointer; 
+// }
 /*Image Slider*/
 .index-swiper .swiper-container {
-  width: 1000px;
-  height: 550px;
+  width: 80vw;
+  // height: 55vh;
   }
 .index-swiper .swiper-slide img {
-  width: 1000px;
-  height: 550px;
+  width: 80vw;
+  // height: 55vh;
   }
+
+
+  /**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+.modal {
+display:flex;
+  margin-top:-200%;
+  height: 100vh;
+}
+.modal-content {
+  height: 100vh;
+}
+.description {
+  font-size:3vw;
+  height:50vh;
+}
+.accommodation-name{
+  font-size: 3vw;
+}
+}

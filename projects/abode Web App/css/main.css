@@ -233,20 +233,23 @@ html {
     width: 100px; } }
 /*Filtering section*/
 .filtering-section {
-  margin-top: 10%; }
+  margin-left: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1vw;
+  text-align: center; }
 
 /*Search bar*/
 #search-location {
-  margin-left: 40%;
-  width: 350px;
+  width: 35vw;
   background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
   padding: 10px 10px 10px 35px;
   border-radius: 10px;
-  font-family: "Mallanna", sans-serif;
-  font-size: 16px; }
+  font-family: "Mallanna", sans-serif; }
 
 .locations, .accommodation-type {
-  width: 350px; }
+  width: 35vw; }
 
 .period-of-stay {
   display: -webkit-box;
@@ -254,11 +257,11 @@ html {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin-left: 43%;
-  padding-top: 25px; }
+  margin-left: 10%;
+  padding: 25px 30px 10px 30px; }
 
 .checkin, .checkout {
-  width: 80px;
+  width: 8vw;
   padding: 0.5em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -266,15 +269,14 @@ html {
   border-style: solid;
   border-width: 1px;
   font-family: "Mallanna", sans-serif;
-  font-size: 16px;
   text-align: center; }
 
 .checkout {
-  margin-left: 10%; }
+  margin-left: 8%; }
 
 /*guests and price*/
 .container {
-  margin-left: 41%;
+  margin-left: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,53 +284,82 @@ html {
   flex-flow: row wrap; }
 
 .col {
-  position: relative;
   margin: 30px;
   cursor: pointer;
-  font-family: "Mallanna", sans-serif;
-  font-size: 16px; }
+  font-family: "Mallanna", sans-serif; }
 
 .guests-number {
-  width: 100px; }
+  width: 10vw; }
 
 .price-range {
-  width: 180px; }
+  width: 18vw; }
 
 .accommo-type {
   font-family: "Mallanna", sans-serif;
-  font-size: 16px;
-  margin-left: 42%; }
+  margin-left: -40%; }
 
 .submitButton {
-  position: absolute;
-  top: 45%;
-  left: 46%;
+  margin-top: 4%;
+  margin-left: -40%;
   width: 10%;
   padding: 10px 10px 10px 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  font-size: 20px;
   background: #c74343;
   font-family: "Mallanna", sans-serif;
-  color: white;
-  z-index: 1; }
+  color: white; }
 
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+  /*Filtering section*/
+  .filtering-section {
+    margin-top: -2%;
+    margin-left: 18%;
+    font-size: 2vw; }
+
+  /*Search bar*/
+  #search-location {
+    width: 5vw;
+    margin-left: 0; }
+
+  .period-of-stay {
+    margin-left: -4%;
+    padding: 20px 30px 0px 30px; }
+
+  .checkin, .checkout {
+    width: 15vw; }
+
+  /*guests and price*/
+  .container {
+    margin-left: -7%; }
+
+  .guests-number {
+    width: 15vw; }
+
+  .price-range {
+    width: 22vw; }
+
+  .submitButton {
+    width: 15%; } }
 /*Hotel list*/
 .accommodation-list {
-  margin-top: 5%;
+  margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  justify-content: center; }
 
 .accommodation-list-item {
-  margin-left: 15%;
-  width: 500px;
-  height: 300px;
+  width: 25vw;
+  height: 30vh;
   padding: 40px;
   border-radius: 3em; }
+
+.accommodation-list-item:hover {
+  cursor: pointer; }
 
 .text-block {
   display: -webkit-box;
@@ -336,43 +367,51 @@ html {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  padding-left: 250px;
+  padding-left: 2.5vw;
   font-family: "Mallanna", sans-serif;
   color: #a4a4a4; }
 
 .title {
-  padding-right: 150px; }
+  padding-right: 15vw; }
 
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+  .accommodation-list {
+    margin-top: 5%;
+    flex-direction: column; }
+
+  .accommodation-list-item {
+    width: 50vw;
+    margin-left: 8%; }
+
+  .text-block {
+    margin-left: 18%; } }
 /* The Modal (background) */
 .modal {
   display: none;
-  position: fixed;
-  z-index: 2;
-  left: 5%;
-  top: 5%;
-  right: 5%;
-  bottom: 5%;
-  text-align: center; }
+  text-align: center;
+  margin-top: -100%;
+  position: relative;
+  z-index: 2; }
 
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
-  display: block;
-  width: 1000px;
-  height: 550px;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
   max-width: 100%; }
 
 /*Item description section*/
 .description {
   margin: auto;
-  display: block;
   background-color: white;
-  width: 1000px;
-  height: 400px;
+  width: 80vw;
   color: #a4a4a4;
   font-family: "Mallanna", sans-serif;
-  font-size: 20px;
-  max-width: 100%; }
+  font-size: 1vw;
+  max-width: 100%;
+  border: 0.7px solid #a4a4a4; }
 
 .accommodation-general, .accommodation-filtered {
   display: -webkit-box;
@@ -382,29 +421,18 @@ html {
   flex-flow: row wrap; }
 
 .accommodation-name {
-  font-size: 30px;
+  font-size: 1.3vw;
   text-align: left;
   font-weight: bold; }
 
 .accommodation_type {
-  position: absolute;
-  margin-top: -2%;
   text-align: left; }
 
 .accommodation-general div {
   padding: 35.5px; }
 
-.accommodation-filtered {
-  position: absolute;
-  top: 80%;
-  left: 25%; }
-  .accommodation-filtered div {
-    padding: 55px; }
-
-.meals {
-  position: absolute;
-  top: 95%;
-  right: 25%; }
+.accommodation-filtered div {
+  padding: 55px; }
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
@@ -416,76 +444,92 @@ html {
 @keyframes zoom {
   from {
     transform: scale(0); }
-
   to {
     transform: scale(1); } }
 /* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 50px;
-  color: #a4a4a4;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s; }
-
-.close:hover,
-.close:focus {
-  color: #a4a4a4;
-  text-decoration: none;
-  cursor: pointer; }
+  display: none; }
 
 /*Image Slider*/
 .index-swiper .swiper-container {
-  width: 1000px;
-  height: 550px; }
+  width: 80vw; }
 
 .index-swiper .swiper-slide img {
-  width: 1000px;
-  height: 550px; }
+  width: 80vw; }
 
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+  .modal {
+    display: flex;
+    margin-top: -200%;
+    height: 100vh; }
+
+  .modal-content {
+    height: 100vh; }
+
+  .description {
+    font-size: 3vw;
+    height: 50vh; }
+
+  .accommodation-name {
+    font-size: 3vw; } }
 /**********Welcome Page**********/
 .welcome-background {
   background: url("../images/fern.png") no-repeat fixed center; }
 
 .logo img {
-  margin: 0;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  margin-top: 10%;
+  margin-left: 35%;
+  display: flex; }
 
-.display-text {
-  margin-top: 28%; }
-  .display-text p {
-    margin: 0;
-    font-family: "Mallanna", sans-serif;
-    color: #a4a4a4;
-    text-align: center;
-    font-size: 40px; }
+.display-text p {
+  font-family: "Mallanna", sans-serif;
+  color: #a4a4a4;
+  text-align: center;
+  font-size: 3vw;
+  margin: 0; }
 
 .start-button {
-  position: absolute;
-  margin: 0;
-  top: 65%;
-  left: 40%;
-  width: 18%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 40vw;
   padding: 10px 10px 10px 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 2vw;
   background: #c74343; }
   .start-button a {
+    text-align: center;
     text-decoration: none;
     color: white;
     font-family: "Mallanna", sans-serif; }
 
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+  .logo img {
+    margin-top: 35%;
+    margin-left: 20%; }
+
+  .display-text {
+    margin-top: 2%; }
+    .display-text p {
+      font-size: 6vw; }
+
+  .start-button {
+    width: 60vw;
+    margin-top: 2%;
+    font-size: 4vw; } }
 /**********Home Page**********/
 .logo-home img {
   margin: 0;
-  position: absolute;
-  top: 10%;
-  left: 50%;
+  margin-top: 10%;
+  margin-left: 50%;
   transform: translate(-50%, -50%);
-  width: 380px; }
+  width: 38vw; }
+
+/**********Responsive Design**********/
+@media screen and (max-width: 640px) {
+  .logo-home img {
+    margin-left: 40%; } }
